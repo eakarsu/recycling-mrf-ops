@@ -1,0 +1,30 @@
+{
+  "id": "recycling-mrf-ops",
+  "title": "Recycling Mrf Ops App",
+  "industry": "Energy, Utilities & Environment",
+  "industryId": "energy-utilities-environment",
+  "specialization": "Recycling Mrf Ops",
+  "sourcePlatformGroup": "energy-environment-platform",
+  "sources": [
+    "AIBiocharSoilCarbonSequestrationTracker",
+    "AICoralReefRestorationTracker",
+    "AIRecyclingMRFOps",
+    "AIWindSolarFarmOps"
+  ],
+  "featureCount": 291,
+  "candidateFeatureCount": 417,
+  "eliminatedSimilarFeatures": 126,
+  "evidenceCount": 905,
+  "aiPageCount": 59,
+  "sourceAIPageCount": 63,
+  "featureEvidencePolicy": "Existing source routes, pages, APIs, models, schemas, and navigation only",
+  "optimizationPolicy": "Equivalent feature names are consolidated once per industry and assigned to one canonical app owner",
+  "database": "database.sqlite",
+  "databaseSeed": {
+    "seededProjects": 3,
+    "seededTables": 63,
+    "seededRows": 945
+  },
+  "visibleFeatureCount": 144,
+  "featureVisibilityMode": "seeded-or-ai"
+}
