@@ -1965,7 +1965,7 @@
   },
   {
     "name": "AI Species Id",
-    "canonicalKey": "ai id species",
+    "canonicalKey": "ai id specy",
     "aliases": [],
     "kinds": [
       "navigation"
@@ -1989,7 +1989,7 @@
   },
   {
     "name": "AI Species Id Fish Page",
-    "canonicalKey": "ai fish id species",
+    "canonicalKey": "ai fish id specy",
     "aliases": [],
     "kinds": [
       "page"
@@ -2015,7 +2015,7 @@
   },
   {
     "name": "AI Species Mix Recommend",
-    "canonicalKey": "ai mix recommend species",
+    "canonicalKey": "ai mix recommend specy",
     "aliases": [
       "AI Species Mix Recommend Page"
     ],
@@ -2194,10 +2194,10 @@
     ]
   },
   {
-    "name": "AI Training Needs Page",
+    "name": "AI Training Needs",
     "canonicalKey": "ai need training",
     "aliases": [
-      "AI Training Needs"
+      "AI Training Needs Page"
     ],
     "kinds": [
       "navigation",
@@ -2700,6 +2700,41 @@
     ]
   },
   {
+    "name": "Assess",
+    "canonicalKey": "assess",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/cases/:id/assess"
+    ],
+    "sourceProjects": [
+      "AIOilGasWellProductionForecaster",
+      "AIWindSolarFarmOps"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/climate-pattern-forecaster",
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIOilGasWellProductionForecaster",
+        "path": "backend/src/governance/routerFactory.js:190",
+        "route": "/cases/:id/assess",
+        "originApp": "energy-utilities-environment/climate-pattern-forecaster"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIWindSolarFarmOps",
+        "path": "backend/governance/routerFactory.js:213",
+        "route": "/cases/:id/assess",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
     "name": "Asset Deg Trend",
     "canonicalKey": "asset deg trend",
     "aliases": [],
@@ -2721,7 +2756,7 @@
       {
         "kind": "api",
         "sourceProject": "AIWindSolarFarmOps",
-        "path": "backend/routes/ai.js:538",
+        "path": "backend/routes/ai.js:534",
         "route": "/asset-deg-trend",
         "originApp": "energy-utilities-environment/recycling-mrf-ops"
       },
@@ -2830,6 +2865,32 @@
         "sourceProject": "AIWindSolarFarmOps",
         "path": "backend/routes/_crudFactory.js:156",
         "route": "/:id/attachments",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
+    "name": "Attempts",
+    "canonicalKey": "attempt",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/outbox/:id/attempts"
+    ],
+    "sourceProjects": [
+      "AIWindSolarFarmOps"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIWindSolarFarmOps",
+        "path": "backend/governance/routerFactory.js:392",
+        "route": "/outbox/:id/attempts",
         "originApp": "energy-utilities-environment/recycling-mrf-ops"
       }
     ]
@@ -3079,7 +3140,7 @@
   },
   {
     "name": "Bales Finished",
-    "canonicalKey": "bales finished",
+    "canonicalKey": "bale finished",
     "aliases": [],
     "kinds": [
       "navigation"
@@ -3123,7 +3184,7 @@
       {
         "kind": "api",
         "sourceProject": "AIWindSolarFarmOps",
-        "path": "backend/routes/ai.js:440",
+        "path": "backend/routes/ai.js:436",
         "route": "/blade-inspection-summary",
         "originApp": "energy-utilities-environment/recycling-mrf-ops"
       },
@@ -3417,10 +3478,10 @@
     ]
   },
   {
-    "name": "Buyers",
+    "name": "Buyers Page",
     "canonicalKey": "buyer",
     "aliases": [
-      "Buyers Page"
+      "Buyers"
     ],
     "kinds": [
       "page"
@@ -3521,6 +3582,64 @@
     ]
   },
   {
+    "name": "Cases",
+    "canonicalKey": "case",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/cases"
+    ],
+    "sourceProjects": [
+      "AIOilGasWellProductionForecaster",
+      "AISmartHomeEnergyOptimizer",
+      "AIWindSolarFarmOps"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/climate-pattern-forecaster",
+      "energy-utilities-environment/energy-grid-optimizer",
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIOilGasWellProductionForecaster",
+        "path": "backend/src/governance/routerFactory.js:68",
+        "route": "/cases",
+        "originApp": "energy-utilities-environment/climate-pattern-forecaster"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIOilGasWellProductionForecaster",
+        "path": "backend/src/governance/routerFactory.js:84",
+        "route": "/cases",
+        "originApp": "energy-utilities-environment/climate-pattern-forecaster"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AISmartHomeEnergyOptimizer",
+        "path": "backend/routes/energyWorkflow.js:9",
+        "route": "/cases",
+        "originApp": "energy-utilities-environment/energy-grid-optimizer"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIWindSolarFarmOps",
+        "path": "backend/governance/routerFactory.js:100",
+        "route": "/cases",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIWindSolarFarmOps",
+        "path": "backend/governance/routerFactory.js:84",
+        "route": "/cases",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
     "name": "Citizen Portal Page",
     "canonicalKey": "citizen portal",
     "aliases": [
@@ -3581,10 +3700,10 @@
     ]
   },
   {
-    "name": "Citizen Submissions",
+    "name": "Citizen Submissions Page",
     "canonicalKey": "citizen submission",
     "aliases": [
-      "Citizen Submissions Page"
+      "Citizen Submissions"
     ],
     "kinds": [
       "page"
@@ -3612,6 +3731,50 @@
         "sourceProject": "AICoralReefRestorationTracker",
         "path": "frontend/src/pages/CitizenSubmissionsPage.js",
         "route": "/CitizenSubmissionsPage",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
+    "name": "Claim",
+    "canonicalKey": "claim",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/integrations/claim"
+    ],
+    "sourceProjects": [
+      "AIRecyclingMRFOps",
+      "AIWasteManagementRouteOptimizer",
+      "AIWaterUtilityManagement"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/climate-pattern-forecaster",
+      "energy-utilities-environment/energy-grid-optimizer",
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIWaterUtilityManagement",
+        "path": "backend/governance/router.js:331",
+        "route": "/integrations/claim",
+        "originApp": "energy-utilities-environment/climate-pattern-forecaster"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIWasteManagementRouteOptimizer",
+        "path": "backend/governance/router.js:330",
+        "route": "/integrations/claim",
+        "originApp": "energy-utilities-environment/energy-grid-optimizer"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIRecyclingMRFOps",
+        "path": "backend/governance/router.js:264",
+        "route": "/integrations/claim",
         "originApp": "energy-utilities-environment/recycling-mrf-ops"
       }
     ]
@@ -3750,9 +3913,7 @@
       "AIBatteryLifecycleManager",
       "AIBiocharSoilCarbonSequestrationTracker",
       "AIClimatePatternForecaster",
-      "AICoralReefRestorationTracker",
-      "AIRecyclingMRFOps",
-      "AIWindSolarFarmOps"
+      "AICoralReefRestorationTracker"
     ],
     "consolidatedFromApps": [
       "energy-utilities-environment/climate-pattern-forecaster",
@@ -3762,7 +3923,7 @@
       {
         "kind": "api",
         "sourceProject": "AIBatteryLifecycleManager",
-        "path": "backend/services/ai.js:64",
+        "path": "backend/services/ai.js:35",
         "route": "/api/v1/chat/completions",
         "originApp": "energy-utilities-environment/climate-pattern-forecaster"
       },
@@ -3828,19 +3989,55 @@
         "path": "backend/services/ai.js:63",
         "route": "/api/v1/chat/completions",
         "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
+    "name": "Connector Failures",
+    "canonicalKey": "connector failure",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/cases/:id/connector-failures",
+      "/connector-failures"
+    ],
+    "sourceProjects": [
+      "AIOilGasWellProductionForecaster",
+      "AIWindSolarFarmOps"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/climate-pattern-forecaster",
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIOilGasWellProductionForecaster",
+        "path": "backend/src/governance/routerFactory.js:304",
+        "route": "/connector-failures",
+        "originApp": "energy-utilities-environment/climate-pattern-forecaster"
       },
       {
         "kind": "api",
-        "sourceProject": "AIRecyclingMRFOps",
-        "path": "backend/services/ai.js:66",
-        "route": "/api/v1/chat/completions",
+        "sourceProject": "AIOilGasWellProductionForecaster",
+        "path": "backend/src/governance/routerFactory.js:321",
+        "route": "/connector-failures",
+        "originApp": "energy-utilities-environment/climate-pattern-forecaster"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIWindSolarFarmOps",
+        "path": "backend/governance/routerFactory.js:523",
+        "route": "/connector-failures",
         "originApp": "energy-utilities-environment/recycling-mrf-ops"
       },
       {
         "kind": "api",
         "sourceProject": "AIWindSolarFarmOps",
-        "path": "backend/services/ai.js:63",
-        "route": "/api/v1/chat/completions",
+        "path": "backend/governance/routerFactory.js:542",
+        "route": "/cases/:id/connector-failures",
         "originApp": "energy-utilities-environment/recycling-mrf-ops"
       }
     ]
@@ -4123,7 +4320,7 @@
       {
         "kind": "api",
         "sourceProject": "AIWindSolarFarmOps",
-        "path": "backend/routes/ai.js:370",
+        "path": "backend/routes/ai.js:366",
         "route": "/curtailment-optimize",
         "originApp": "energy-utilities-environment/recycling-mrf-ops"
       },
@@ -4145,7 +4342,7 @@
   },
   {
     "name": "Custom Views Page",
-    "canonicalKey": "custom views",
+    "canonicalKey": "custom view",
     "aliases": [],
     "kinds": [
       "page"
@@ -4278,6 +4475,50 @@
     ]
   },
   {
+    "name": "Decision",
+    "canonicalKey": "decision",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/:id/decision"
+    ],
+    "sourceProjects": [
+      "AIRecyclingMRFOps",
+      "AIWasteManagementRouteOptimizer",
+      "AIWaterUtilityManagement"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/climate-pattern-forecaster",
+      "energy-utilities-environment/energy-grid-optimizer",
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIWaterUtilityManagement",
+        "path": "backend/governance/router.js:131",
+        "route": "/:id/decision",
+        "originApp": "energy-utilities-environment/climate-pattern-forecaster"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIWasteManagementRouteOptimizer",
+        "path": "backend/governance/router.js:130",
+        "route": "/:id/decision",
+        "originApp": "energy-utilities-environment/energy-grid-optimizer"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIRecyclingMRFOps",
+        "path": "backend/governance/router.js:130",
+        "route": "/:id/decision",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
     "name": "Deliveries",
     "canonicalKey": "delivery",
     "aliases": [],
@@ -4324,6 +4565,32 @@
         "sourceProject": "AIWindSolarFarmOps",
         "path": "backend/routes/webhooks.js:58",
         "route": "/:id/deliveries",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
+    "name": "Demo Credentials",
+    "canonicalKey": "credential demo",
+    "aliases": [],
+    "kinds": [
+      "page"
+    ],
+    "routes": [
+      "/demo-credentials"
+    ],
+    "sourceProjects": [
+      "AIBiocharSoilCarbonSequestrationTracker"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "page",
+        "sourceProject": "AIBiocharSoilCarbonSequestrationTracker",
+        "path": "src/routes/auth.js:19",
+        "route": "/demo-credentials",
         "originApp": "energy-utilities-environment/recycling-mrf-ops"
       }
     ]
@@ -4519,7 +4786,7 @@
   },
   {
     "name": "Divers Vessels",
-    "canonicalKey": "divers vessel",
+    "canonicalKey": "diver vessel",
     "aliases": [],
     "kinds": [
       "navigation"
@@ -4775,7 +5042,7 @@
       {
         "kind": "api",
         "sourceProject": "AIWindSolarFarmOps",
-        "path": "backend/routes/ai.js:450",
+        "path": "backend/routes/ai.js:446",
         "route": "/draft-work-order",
         "originApp": "energy-utilities-environment/recycling-mrf-ops"
       },
@@ -4893,7 +5160,7 @@
       {
         "kind": "api",
         "sourceProject": "AIWindSolarFarmOps",
-        "path": "backend/routes/ai.js:623",
+        "path": "backend/routes/ai.js:619",
         "route": "/drone-blade-inspection",
         "originApp": "energy-utilities-environment/recycling-mrf-ops"
       },
@@ -5220,6 +5487,208 @@
     ]
   },
   {
+    "name": "Erasure Complete",
+    "canonicalKey": "complete erasure",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/:id/erasure-complete"
+    ],
+    "sourceProjects": [
+      "AIRecyclingMRFOps",
+      "AIWasteManagementRouteOptimizer",
+      "AIWaterUtilityManagement"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/climate-pattern-forecaster",
+      "energy-utilities-environment/energy-grid-optimizer",
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIWaterUtilityManagement",
+        "path": "backend/governance/router.js:238",
+        "route": "/:id/erasure-complete",
+        "originApp": "energy-utilities-environment/climate-pattern-forecaster"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIWasteManagementRouteOptimizer",
+        "path": "backend/governance/router.js:237",
+        "route": "/:id/erasure-complete",
+        "originApp": "energy-utilities-environment/energy-grid-optimizer"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIRecyclingMRFOps",
+        "path": "backend/governance/router.js:237",
+        "route": "/:id/erasure-complete",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
+    "name": "Erasure Request",
+    "canonicalKey": "erasure request",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/:id/erasure-request"
+    ],
+    "sourceProjects": [
+      "AIRecyclingMRFOps",
+      "AIWasteManagementRouteOptimizer",
+      "AIWaterUtilityManagement"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/climate-pattern-forecaster",
+      "energy-utilities-environment/energy-grid-optimizer",
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIWaterUtilityManagement",
+        "path": "backend/governance/router.js:208",
+        "route": "/:id/erasure-request",
+        "originApp": "energy-utilities-environment/climate-pattern-forecaster"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIWasteManagementRouteOptimizer",
+        "path": "backend/governance/router.js:207",
+        "route": "/:id/erasure-request",
+        "originApp": "energy-utilities-environment/energy-grid-optimizer"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIRecyclingMRFOps",
+        "path": "backend/governance/router.js:207",
+        "route": "/:id/erasure-request",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
+    "name": "Evaluations",
+    "canonicalKey": "evaluation",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/evaluations"
+    ],
+    "sourceProjects": [
+      "AIClimatePatternForecaster",
+      "AICoralReefRestorationTracker"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/climate-pattern-forecaster",
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIClimatePatternForecaster",
+        "path": "server/routes/governedForecasts.js:11",
+        "route": "/evaluations",
+        "originApp": "energy-utilities-environment/climate-pattern-forecaster"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AICoralReefRestorationTracker",
+        "path": "backend/routes/governedFieldwork.js:8",
+        "route": "/evaluations",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
+    "name": "Events",
+    "canonicalKey": "event",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/:id/events"
+    ],
+    "sourceProjects": [
+      "AIRecyclingMRFOps",
+      "AIWasteManagementRouteOptimizer",
+      "AIWaterUtilityManagement"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/climate-pattern-forecaster",
+      "energy-utilities-environment/energy-grid-optimizer",
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIWaterUtilityManagement",
+        "path": "backend/governance/router.js:98",
+        "route": "/:id/events",
+        "originApp": "energy-utilities-environment/climate-pattern-forecaster"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIWasteManagementRouteOptimizer",
+        "path": "backend/governance/router.js:97",
+        "route": "/:id/events",
+        "originApp": "energy-utilities-environment/energy-grid-optimizer"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIRecyclingMRFOps",
+        "path": "backend/governance/router.js:97",
+        "route": "/:id/events",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
+    "name": "Evidence",
+    "canonicalKey": "evidence",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/cases/:id/evidence"
+    ],
+    "sourceProjects": [
+      "AIOilGasWellProductionForecaster",
+      "AIWindSolarFarmOps"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/climate-pattern-forecaster",
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIOilGasWellProductionForecaster",
+        "path": "backend/src/governance/routerFactory.js:153",
+        "route": "/cases/:id/evidence",
+        "originApp": "energy-utilities-environment/climate-pattern-forecaster"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIWindSolarFarmOps",
+        "path": "backend/governance/routerFactory.js:171",
+        "route": "/cases/:id/evidence",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
     "name": "Executive Brief",
     "canonicalKey": "brief executive",
     "aliases": [],
@@ -5308,7 +5777,7 @@
       {
         "kind": "api",
         "sourceProject": "AIWindSolarFarmOps",
-        "path": "backend/routes/ai.js:461",
+        "path": "backend/routes/ai.js:457",
         "route": "/executive-brief",
         "originApp": "energy-utilities-environment/recycling-mrf-ops"
       },
@@ -5333,22 +5802,49 @@
     "canonicalKey": "export",
     "aliases": [],
     "kinds": [
+      "api",
       "page"
     ],
     "routes": [
       "/:id/export"
     ],
     "sourceProjects": [
-      "AIBiocharSoilCarbonSequestrationTracker"
+      "AIBiocharSoilCarbonSequestrationTracker",
+      "AIRecyclingMRFOps",
+      "AIWasteManagementRouteOptimizer",
+      "AIWaterUtilityManagement"
     ],
     "consolidatedFromApps": [
+      "energy-utilities-environment/climate-pattern-forecaster",
+      "energy-utilities-environment/energy-grid-optimizer",
       "energy-utilities-environment/recycling-mrf-ops"
     ],
     "evidence": [
       {
+        "kind": "api",
+        "sourceProject": "AIWaterUtilityManagement",
+        "path": "backend/governance/router.js:83",
+        "route": "/:id/export",
+        "originApp": "energy-utilities-environment/climate-pattern-forecaster"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIWasteManagementRouteOptimizer",
+        "path": "backend/governance/router.js:82",
+        "route": "/:id/export",
+        "originApp": "energy-utilities-environment/energy-grid-optimizer"
+      },
+      {
         "kind": "page",
         "sourceProject": "AIBiocharSoilCarbonSequestrationTracker",
         "path": "src/routes/carbonReports.js:172",
+        "route": "/:id/export",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIRecyclingMRFOps",
+        "path": "backend/governance/router.js:82",
         "route": "/:id/export",
         "originApp": "energy-utilities-environment/recycling-mrf-ops"
       }
@@ -5376,7 +5872,7 @@
       {
         "kind": "api",
         "sourceProject": "AIWindSolarFarmOps",
-        "path": "backend/routes/ai.js:349",
+        "path": "backend/routes/ai.js:345",
         "route": "/fault-prognostic",
         "originApp": "energy-utilities-environment/recycling-mrf-ops"
       },
@@ -5595,7 +6091,7 @@
       {
         "kind": "api",
         "sourceProject": "AIWindSolarFarmOps",
-        "path": "backend/routes/ai.js:409",
+        "path": "backend/routes/ai.js:405",
         "route": "/fleet-health",
         "originApp": "energy-utilities-environment/recycling-mrf-ops"
       },
@@ -5637,7 +6133,7 @@
       {
         "kind": "api",
         "sourceProject": "AIWindSolarFarmOps",
-        "path": "backend/routes/ai.js:339",
+        "path": "backend/routes/ai.js:335",
         "route": "/forecast-generation",
         "originApp": "energy-utilities-environment/recycling-mrf-ops"
       },
@@ -6193,7 +6689,7 @@
       {
         "kind": "api",
         "sourceProject": "AIClimatePatternForecaster",
-        "path": "server/index.js:45",
+        "path": "server/index.js:46",
         "route": "/api/health",
         "originApp": "energy-utilities-environment/climate-pattern-forecaster"
       },
@@ -6298,7 +6794,7 @@
       {
         "kind": "api",
         "sourceProject": "AIEnvironmentMonitor",
-        "path": "server/index.ts:135",
+        "path": "server/index.ts:137",
         "route": "/api/health",
         "originApp": "energy-utilities-environment/climate-pattern-forecaster"
       },
@@ -6312,42 +6808,42 @@
       {
         "kind": "api",
         "sourceProject": "AIOilGasWellProductionForecaster",
-        "path": "backend/src/server.js:52",
+        "path": "backend/src/server.js:55",
         "route": "/api/health",
         "originApp": "energy-utilities-environment/climate-pattern-forecaster"
       },
       {
         "kind": "api",
         "sourceProject": "AIWaterUtilityManagement",
-        "path": "backend/server.js:69",
+        "path": "backend/server.js:30",
         "route": "/api/health",
         "originApp": "energy-utilities-environment/climate-pattern-forecaster"
       },
       {
         "kind": "api",
         "sourceProject": "AIEnergyGridOptimizer",
-        "path": "backend/server.js:277",
+        "path": "backend/server.js:281",
         "route": "/api/health",
         "originApp": "energy-utilities-environment/energy-grid-optimizer"
       },
       {
         "kind": "api",
         "sourceProject": "AISmartHomeEnergyOptimizer",
-        "path": "backend/server.js:41",
+        "path": "backend/server.js:21",
         "route": "/api/health",
         "originApp": "energy-utilities-environment/energy-grid-optimizer"
       },
       {
         "kind": "api",
         "sourceProject": "AIWasteManagementRouteOptimizer",
-        "path": "backend/server.js:54",
+        "path": "backend/server.js:40",
         "route": "/api/health",
         "originApp": "energy-utilities-environment/energy-grid-optimizer"
       },
       {
         "kind": "page",
         "sourceProject": "AIBiocharSoilCarbonSequestrationTracker",
-        "path": "index.js:52",
+        "path": "index.js:51",
         "route": "/health",
         "originApp": "energy-utilities-environment/recycling-mrf-ops"
       },
@@ -6466,14 +6962,14 @@
       {
         "kind": "api",
         "sourceProject": "AIRecyclingMRFOps",
-        "path": "backend/server.js:48",
+        "path": "backend/server.js:49",
         "route": "/api/health",
         "originApp": "energy-utilities-environment/recycling-mrf-ops"
       },
       {
         "kind": "api",
         "sourceProject": "AIWindSolarFarmOps",
-        "path": "backend/server.js:48",
+        "path": "backend/server.js:27",
         "route": "/api/health",
         "originApp": "energy-utilities-environment/recycling-mrf-ops"
       }
@@ -6515,13 +7011,16 @@
     ],
     "routes": [
       "/:wo_id/history",
-      "/history"
+      "/cases/:id/history",
+      "/history",
+      "/observations/:id/history"
     ],
     "sourceProjects": [
       "AIBatteryLifecycleManager",
       "AIBiocharSoilCarbonSequestrationTracker",
       "AIClimatePatternForecaster",
       "AICoralReefRestorationTracker",
+      "AIEnvironmentMonitor",
       "AIOilGasWellProductionForecaster",
       "AIRecyclingMRFOps",
       "AISmartHomeEnergyOptimizer",
@@ -6608,6 +7107,20 @@
         "sourceProject": "AIClimatePatternForecaster",
         "path": "server/routes/gap_only_8_frontend_pages_despite_22_backend_routes_ui.js:134",
         "route": "/history",
+        "originApp": "energy-utilities-environment/climate-pattern-forecaster"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIEnvironmentMonitor",
+        "path": "server/routes/governedInvestigations.ts:14",
+        "route": "/observations/:id/history",
+        "originApp": "energy-utilities-environment/climate-pattern-forecaster"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIOilGasWellProductionForecaster",
+        "path": "backend/src/governance/routerFactory.js:136",
+        "route": "/cases/:id/history",
         "originApp": "energy-utilities-environment/climate-pattern-forecaster"
       },
       {
@@ -6837,7 +7350,14 @@
       {
         "kind": "api",
         "sourceProject": "AIWindSolarFarmOps",
-        "path": "backend/routes/ai.js:315",
+        "path": "backend/governance/routerFactory.js:154",
+        "route": "/cases/:id/history",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIWindSolarFarmOps",
+        "path": "backend/routes/ai.js:311",
         "route": "/history",
         "originApp": "energy-utilities-environment/recycling-mrf-ops"
       },
@@ -6872,7 +7392,7 @@
       {
         "kind": "api",
         "sourceProject": "AIWindSolarFarmOps",
-        "path": "backend/routes/ai.js:613",
+        "path": "backend/routes/ai.js:609",
         "route": "/hybrid-storage-co-opt",
         "originApp": "energy-utilities-environment/recycling-mrf-ops"
       },
@@ -6961,7 +7481,7 @@
       {
         "kind": "api",
         "sourceProject": "AIWindSolarFarmOps",
-        "path": "backend/routes/ai.js:562",
+        "path": "backend/routes/ai.js:558",
         "route": "/intraday-forecast",
         "originApp": "energy-utilities-environment/recycling-mrf-ops"
       },
@@ -6996,7 +7516,7 @@
       {
         "kind": "api",
         "sourceProject": "AIWindSolarFarmOps",
-        "path": "backend/routes/ai.js:499",
+        "path": "backend/routes/ai.js:495",
         "route": "/inverter-clipping-detect",
         "originApp": "energy-utilities-environment/recycling-mrf-ops"
       },
@@ -7199,7 +7719,7 @@
   },
   {
     "name": "Loads In",
-    "canonicalKey": "in loads",
+    "canonicalKey": "in load",
     "aliases": [
       "Loads In Page"
     ],
@@ -7250,7 +7770,7 @@
   },
   {
     "name": "Loads Out",
-    "canonicalKey": "loads out",
+    "canonicalKey": "load out",
     "aliases": [
       "Loads Out Page"
     ],
@@ -7319,7 +7839,7 @@
       {
         "kind": "page",
         "sourceProject": "AIBiocharSoilCarbonSequestrationTracker",
-        "path": "src/routes/auth.js:166",
+        "path": "src/routes/auth.js:182",
         "route": "/logout",
         "originApp": "energy-utilities-environment/recycling-mrf-ops"
       }
@@ -7480,10 +8000,13 @@
     "sourceProjects": [
       "AIBatteryLifecycleManager",
       "AIBiocharSoilCarbonSequestrationTracker",
+      "AIClimatePatternForecaster",
       "AICoralReefRestorationTracker",
       "AIEnergyGridOptimizer",
+      "AIEnvironmentMonitor",
       "AIOilGasWellProductionForecaster",
       "AIRecyclingMRFOps",
+      "AISmartHomeEnergyOptimizer",
       "AIWasteManagementRouteOptimizer",
       "AIWaterUtilityManagement",
       "AIWindSolarFarmOps"
@@ -7497,7 +8020,21 @@
       {
         "kind": "api",
         "sourceProject": "AIBatteryLifecycleManager",
-        "path": "backend/routes/auth.js:66",
+        "path": "backend/routes/auth.js:42",
+        "route": "/me",
+        "originApp": "energy-utilities-environment/climate-pattern-forecaster"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIClimatePatternForecaster",
+        "path": "server/routes/auth.js:47",
+        "route": "/me",
+        "originApp": "energy-utilities-environment/climate-pattern-forecaster"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIEnvironmentMonitor",
+        "path": "server/routes/auth.ts:117",
         "route": "/me",
         "originApp": "energy-utilities-environment/climate-pattern-forecaster"
       },
@@ -7511,28 +8048,35 @@
       {
         "kind": "api",
         "sourceProject": "AIWaterUtilityManagement",
-        "path": "backend/routes/auth.js:52",
+        "path": "backend/routes/auth.js:53",
         "route": "/me",
         "originApp": "energy-utilities-environment/climate-pattern-forecaster"
       },
       {
         "kind": "api",
         "sourceProject": "AIEnergyGridOptimizer",
-        "path": "backend/server.js:94",
+        "path": "backend/server.js:98",
         "route": "/api/auth/me",
         "originApp": "energy-utilities-environment/energy-grid-optimizer"
       },
       {
         "kind": "api",
+        "sourceProject": "AISmartHomeEnergyOptimizer",
+        "path": "backend/routes/auth.js:53",
+        "route": "/me",
+        "originApp": "energy-utilities-environment/energy-grid-optimizer"
+      },
+      {
+        "kind": "api",
         "sourceProject": "AIWasteManagementRouteOptimizer",
-        "path": "backend/routes/auth.js:43",
+        "path": "backend/routes/auth.js:69",
         "route": "/me",
         "originApp": "energy-utilities-environment/energy-grid-optimizer"
       },
       {
         "kind": "page",
         "sourceProject": "AIBiocharSoilCarbonSequestrationTracker",
-        "path": "src/routes/auth.js:190",
+        "path": "src/routes/auth.js:206",
         "route": "/me",
         "originApp": "energy-utilities-environment/recycling-mrf-ops"
       },
@@ -7553,21 +8097,21 @@
       {
         "kind": "api",
         "sourceProject": "AICoralReefRestorationTracker",
-        "path": "backend/routes/auth.js:66",
+        "path": "backend/routes/auth.js:6",
         "route": "/me",
         "originApp": "energy-utilities-environment/recycling-mrf-ops"
       },
       {
         "kind": "api",
         "sourceProject": "AIRecyclingMRFOps",
-        "path": "backend/routes/auth.js:67",
+        "path": "backend/routes/auth.js:49",
         "route": "/me",
         "originApp": "energy-utilities-environment/recycling-mrf-ops"
       },
       {
         "kind": "api",
         "sourceProject": "AIWindSolarFarmOps",
-        "path": "backend/routes/auth.js:66",
+        "path": "backend/routes/auth.js:47",
         "route": "/me",
         "originApp": "energy-utilities-environment/recycling-mrf-ops"
       }
@@ -7776,6 +8320,32 @@
     ]
   },
   {
+    "name": "Mrv Readiness",
+    "canonicalKey": "mrv readiness",
+    "aliases": [],
+    "kinds": [
+      "page"
+    ],
+    "routes": [
+      "/mrv-readiness"
+    ],
+    "sourceProjects": [
+      "AIBiocharSoilCarbonSequestrationTracker"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "page",
+        "sourceProject": "AIBiocharSoilCarbonSequestrationTracker",
+        "path": "src/routes/runtimeAi.js:10",
+        "route": "/mrv-readiness",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
     "name": "Noaa Coral Reef Watch",
     "canonicalKey": "coral noaa reef watch",
     "aliases": [],
@@ -7887,6 +8457,41 @@
     ]
   },
   {
+    "name": "Observations",
+    "canonicalKey": "observation",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/observations"
+    ],
+    "sourceProjects": [
+      "AICoralReefRestorationTracker",
+      "AIEnvironmentMonitor"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/climate-pattern-forecaster",
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIEnvironmentMonitor",
+        "path": "server/routes/governedInvestigations.ts:10",
+        "route": "/observations",
+        "originApp": "energy-utilities-environment/climate-pattern-forecaster"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AICoralReefRestorationTracker",
+        "path": "backend/routes/governedFieldwork.js:6",
+        "route": "/observations",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
     "name": "Operators",
     "canonicalKey": "operator",
     "aliases": [
@@ -7933,6 +8538,40 @@
         "sourceProject": "AIRecyclingMRFOps",
         "path": "frontend/src/pages/OperatorsPage.js",
         "route": "/OperatorsPage",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
+    "name": "Outbox",
+    "canonicalKey": "outbox",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/cases/:id/outbox",
+      "/outbox"
+    ],
+    "sourceProjects": [
+      "AIWindSolarFarmOps"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIWindSolarFarmOps",
+        "path": "backend/governance/routerFactory.js:332",
+        "route": "/outbox",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIWindSolarFarmOps",
+        "path": "backend/governance/routerFactory.js:352",
+        "route": "/cases/:id/outbox",
         "originApp": "energy-utilities-environment/recycling-mrf-ops"
       }
     ]
@@ -8141,7 +8780,7 @@
   },
   {
     "name": "Partners Grants",
-    "canonicalKey": "grant partners",
+    "canonicalKey": "grant partner",
     "aliases": [],
     "kinds": [
       "navigation"
@@ -8284,6 +8923,41 @@
     ]
   },
   {
+    "name": "Policy",
+    "canonicalKey": "policy",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/policy"
+    ],
+    "sourceProjects": [
+      "AIOilGasWellProductionForecaster",
+      "AIWindSolarFarmOps"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/climate-pattern-forecaster",
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIOilGasWellProductionForecaster",
+        "path": "backend/src/governance/routerFactory.js:52",
+        "route": "/policy",
+        "originApp": "energy-utilities-environment/climate-pattern-forecaster"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIWindSolarFarmOps",
+        "path": "backend/governance/routerFactory.js:68",
+        "route": "/policy",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
     "name": "Portfolio",
     "canonicalKey": "portfolio",
     "aliases": [],
@@ -8382,7 +9056,7 @@
       {
         "kind": "api",
         "sourceProject": "AIWindSolarFarmOps",
-        "path": "backend/routes/ai.js:380",
+        "path": "backend/routes/ai.js:376",
         "route": "/ppa-settlement",
         "originApp": "energy-utilities-environment/recycling-mrf-ops"
       },
@@ -8424,7 +9098,7 @@
       {
         "kind": "api",
         "sourceProject": "AIWindSolarFarmOps",
-        "path": "backend/routes/ai.js:588",
+        "path": "backend/routes/ai.js:584",
         "route": "/ppa-shortfall-narrator",
         "originApp": "energy-utilities-environment/recycling-mrf-ops"
       },
@@ -8773,7 +9447,7 @@
       {
         "kind": "api",
         "sourceProject": "AIWindSolarFarmOps",
-        "path": "backend/routes/ai.js:489",
+        "path": "backend/routes/ai.js:485",
         "route": "/ramp-rate-strategy",
         "originApp": "energy-utilities-environment/recycling-mrf-ops"
       },
@@ -8970,7 +9644,7 @@
       {
         "kind": "api",
         "sourceProject": "AIEnvironmentMonitor",
-        "path": "server/routes/auth.ts:214",
+        "path": "server/routes/auth.ts:227",
         "route": "/refresh",
         "originApp": "energy-utilities-environment/climate-pattern-forecaster"
       },
@@ -8984,7 +9658,7 @@
       {
         "kind": "page",
         "sourceProject": "AIBiocharSoilCarbonSequestrationTracker",
-        "path": "src/routes/auth.js:116",
+        "path": "src/routes/auth.js:132",
         "route": "/refresh",
         "originApp": "energy-utilities-environment/recycling-mrf-ops"
       }
@@ -9006,7 +9680,8 @@
       "AIBiocharSoilCarbonSequestrationTracker",
       "AIClimatePatternForecaster",
       "AIEnvironmentMonitor",
-      "AISmartHomeEnergyOptimizer"
+      "AISmartHomeEnergyOptimizer",
+      "AIWasteManagementRouteOptimizer"
     ],
     "consolidatedFromApps": [
       "energy-utilities-environment/climate-pattern-forecaster",
@@ -9017,7 +9692,7 @@
       {
         "kind": "api",
         "sourceProject": "AIClimatePatternForecaster",
-        "path": "server/routes/auth.js:26",
+        "path": "server/routes/auth.js:27",
         "route": "/register",
         "originApp": "energy-utilities-environment/climate-pattern-forecaster"
       },
@@ -9038,14 +9713,21 @@
       {
         "kind": "api",
         "sourceProject": "AISmartHomeEnergyOptimizer",
-        "path": "backend/routes/auth.js:8",
+        "path": "backend/routes/auth.js:9",
+        "route": "/register",
+        "originApp": "energy-utilities-environment/energy-grid-optimizer"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIWasteManagementRouteOptimizer",
+        "path": "backend/routes/auth.js:44",
         "route": "/register",
         "originApp": "energy-utilities-environment/energy-grid-optimizer"
       },
       {
         "kind": "page",
         "sourceProject": "AIBiocharSoilCarbonSequestrationTracker",
-        "path": "src/routes/auth.js:40",
+        "path": "src/routes/auth.js:55",
         "route": "/register",
         "originApp": "energy-utilities-environment/recycling-mrf-ops"
       }
@@ -9136,7 +9818,7 @@
     ]
   },
   {
-    "name": "Results",
+    "name": "Result",
     "canonicalKey": "result",
     "aliases": [],
     "kinds": [
@@ -9144,12 +9826,18 @@
       "page"
     ],
     "routes": [
-      "/results"
+      "/integrations/:outboxId/result",
+      "/results",
+      "/runs/:id/result"
     ],
     "sourceProjects": [
       "AIBiocharSoilCarbonSequestrationTracker",
+      "AIClimatePatternForecaster",
       "AIEnvironmentMonitor",
-      "AISmartHomeEnergyOptimizer"
+      "AIRecyclingMRFOps",
+      "AISmartHomeEnergyOptimizer",
+      "AIWasteManagementRouteOptimizer",
+      "AIWaterUtilityManagement"
     ],
     "consolidatedFromApps": [
       "energy-utilities-environment/climate-pattern-forecaster",
@@ -9159,6 +9847,13 @@
     "evidence": [
       {
         "kind": "api",
+        "sourceProject": "AIClimatePatternForecaster",
+        "path": "server/routes/governedForecasts.js:9",
+        "route": "/runs/:id/result",
+        "originApp": "energy-utilities-environment/climate-pattern-forecaster"
+      },
+      {
+        "kind": "api",
         "sourceProject": "AIEnvironmentMonitor",
         "path": "server/routes/aiNew.ts:534",
         "route": "/results",
@@ -9166,9 +9861,23 @@
       },
       {
         "kind": "api",
+        "sourceProject": "AIWaterUtilityManagement",
+        "path": "backend/governance/router.js:355",
+        "route": "/integrations/:outboxId/result",
+        "originApp": "energy-utilities-environment/climate-pattern-forecaster"
+      },
+      {
+        "kind": "api",
         "sourceProject": "AISmartHomeEnergyOptimizer",
-        "path": "backend/routes/ai.js:439",
+        "path": "backend/routes/ai.js:440",
         "route": "/results",
+        "originApp": "energy-utilities-environment/energy-grid-optimizer"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIWasteManagementRouteOptimizer",
+        "path": "backend/governance/router.js:354",
+        "route": "/integrations/:outboxId/result",
         "originApp": "energy-utilities-environment/energy-grid-optimizer"
       },
       {
@@ -9176,6 +9885,83 @@
         "sourceProject": "AIBiocharSoilCarbonSequestrationTracker",
         "path": "src/routes/ai.js:157",
         "route": "/results",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIRecyclingMRFOps",
+        "path": "backend/governance/router.js:288",
+        "route": "/integrations/:outboxId/result",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
+    "name": "Retire",
+    "canonicalKey": "retire",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/:id/retire"
+    ],
+    "sourceProjects": [
+      "AIRecyclingMRFOps",
+      "AIWasteManagementRouteOptimizer",
+      "AIWaterUtilityManagement"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/climate-pattern-forecaster",
+      "energy-utilities-environment/energy-grid-optimizer",
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIWaterUtilityManagement",
+        "path": "backend/governance/router.js:154",
+        "route": "/:id/retire",
+        "originApp": "energy-utilities-environment/climate-pattern-forecaster"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIWasteManagementRouteOptimizer",
+        "path": "backend/governance/router.js:153",
+        "route": "/:id/retire",
+        "originApp": "energy-utilities-environment/energy-grid-optimizer"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIRecyclingMRFOps",
+        "path": "backend/governance/router.js:153",
+        "route": "/:id/retire",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
+    "name": "Reviews",
+    "canonicalKey": "review",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/observations/:id/reviews"
+    ],
+    "sourceProjects": [
+      "AICoralReefRestorationTracker"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AICoralReefRestorationTracker",
+        "path": "backend/routes/governedFieldwork.js:7",
+        "route": "/observations/:id/reviews",
         "originApp": "energy-utilities-environment/recycling-mrf-ops"
       }
     ]
@@ -9202,7 +9988,7 @@
       {
         "kind": "api",
         "sourceProject": "AIWindSolarFarmOps",
-        "path": "backend/routes/ai.js:548",
+        "path": "backend/routes/ai.js:544",
         "route": "/root-cause-analyzer",
         "originApp": "energy-utilities-environment/recycling-mrf-ops"
       },
@@ -9304,32 +10090,6 @@
         "sourceProject": "AIRecyclingMRFOps",
         "path": "frontend/src/pages/RouteStopsPage.js",
         "route": "/RouteStopsPage",
-        "originApp": "energy-utilities-environment/recycling-mrf-ops"
-      }
-    ]
-  },
-  {
-    "name": "Routes Page",
-    "canonicalKey": "routes",
-    "aliases": [],
-    "kinds": [
-      "page"
-    ],
-    "routes": [
-      "/RoutesPage"
-    ],
-    "sourceProjects": [
-      "AIRecyclingMRFOps"
-    ],
-    "consolidatedFromApps": [
-      "energy-utilities-environment/recycling-mrf-ops"
-    ],
-    "evidence": [
-      {
-        "kind": "page",
-        "sourceProject": "AIRecyclingMRFOps",
-        "path": "frontend/src/pages/RoutesPage.js",
-        "route": "/RoutesPage",
         "originApp": "energy-utilities-environment/recycling-mrf-ops"
       }
     ]
@@ -9684,18 +10444,29 @@
     "canonicalKey": "runs",
     "aliases": [],
     "kinds": [
+      "api",
       "page"
     ],
     "routes": [
-      "/agentic/runs"
+      "/agentic/runs",
+      "/runs"
     ],
     "sourceProjects": [
-      "AIBiocharSoilCarbonSequestrationTracker"
+      "AIBiocharSoilCarbonSequestrationTracker",
+      "AIClimatePatternForecaster"
     ],
     "consolidatedFromApps": [
+      "energy-utilities-environment/climate-pattern-forecaster",
       "energy-utilities-environment/recycling-mrf-ops"
     ],
     "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIClimatePatternForecaster",
+        "path": "server/routes/governedForecasts.js:8",
+        "route": "/runs",
+        "originApp": "energy-utilities-environment/climate-pattern-forecaster"
+      },
       {
         "kind": "page",
         "sourceProject": "AIBiocharSoilCarbonSequestrationTracker",
@@ -9872,7 +10643,7 @@
       {
         "kind": "api",
         "sourceProject": "AIWindSolarFarmOps",
-        "path": "backend/routes/ai.js:300",
+        "path": "backend/routes/ai.js:296",
         "route": "/samples",
         "originApp": "energy-utilities-environment/recycling-mrf-ops"
       }
@@ -9947,10 +10718,10 @@
     ]
   },
   {
-    "name": "Scale Tickets",
+    "name": "Scale Tickets Page",
     "canonicalKey": "scale ticket",
     "aliases": [
-      "Scale Tickets Page"
+      "Scale Tickets"
     ],
     "kinds": [
       "page"
@@ -10041,7 +10812,7 @@
       {
         "kind": "api",
         "sourceProject": "AIWindSolarFarmOps",
-        "path": "backend/routes/ai.js:395",
+        "path": "backend/routes/ai.js:391",
         "route": "/schedule-maintenance",
         "originApp": "energy-utilities-environment/recycling-mrf-ops"
       },
@@ -10129,7 +10900,7 @@
       {
         "kind": "api",
         "sourceProject": "AIEnvironmentMonitor",
-        "path": "server/index.ts:116",
+        "path": "server/index.ts:118",
         "route": "/api/community-carbon-budget/score",
         "originApp": "energy-utilities-environment/climate-pattern-forecaster"
       },
@@ -10251,7 +11022,7 @@
   },
   {
     "name": "Sites Nurseries",
-    "canonicalKey": "nursery sites",
+    "canonicalKey": "nursery site",
     "aliases": [],
     "kinds": [
       "navigation"
@@ -10365,7 +11136,7 @@
       {
         "kind": "api",
         "sourceProject": "AIWindSolarFarmOps",
-        "path": "backend/routes/ai.js:603",
+        "path": "backend/routes/ai.js:599",
         "route": "/soiling-icing-detect",
         "originApp": "energy-utilities-environment/recycling-mrf-ops"
       },
@@ -10524,7 +11295,7 @@
   },
   {
     "name": "Species Id Fish",
-    "canonicalKey": "fish id species",
+    "canonicalKey": "fish id specy",
     "aliases": [],
     "kinds": [
       "api",
@@ -10566,7 +11337,7 @@
   },
   {
     "name": "Species Mix Recommend",
-    "canonicalKey": "mix recommend species",
+    "canonicalKey": "mix recommend specy",
     "aliases": [],
     "kinds": [
       "api",
@@ -10619,6 +11390,13 @@
       {
         "kind": "page",
         "sourceProject": "AIBiocharSoilCarbonSequestrationTracker",
+        "path": "frontend-server.js:26",
+        "route": "/{*splat}",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIBiocharSoilCarbonSequestrationTracker",
         "path": "index.js:73",
         "route": "/{*splat}",
         "originApp": "energy-utilities-environment/recycling-mrf-ops"
@@ -10628,20 +11406,42 @@
   {
     "name": "States",
     "canonicalKey": "state",
-    "aliases": [],
+    "aliases": [
+      "State"
+    ],
     "kinds": [
       "api"
     ],
     "routes": [
+      "/:id/state",
+      "/observations/:id/state",
       "/states"
     ],
     "sourceProjects": [
+      "AIEnergyGridOptimizer",
+      "AIEnvironmentMonitor",
       "AIWindSolarFarmOps"
     ],
     "consolidatedFromApps": [
+      "energy-utilities-environment/climate-pattern-forecaster",
+      "energy-utilities-environment/energy-grid-optimizer",
       "energy-utilities-environment/recycling-mrf-ops"
     ],
     "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIEnvironmentMonitor",
+        "path": "server/routes/governedInvestigations.ts:11",
+        "route": "/observations/:id/state",
+        "originApp": "energy-utilities-environment/climate-pattern-forecaster"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIEnergyGridOptimizer",
+        "path": "backend/routes/governedPlans.js:28",
+        "route": "/:id/state",
+        "originApp": "energy-utilities-environment/energy-grid-optimizer"
+      },
       {
         "kind": "api",
         "sourceProject": "AIWindSolarFarmOps",
@@ -10662,12 +11462,38 @@
       "/:id/submit"
     ],
     "sourceProjects": [
+      "AIRecyclingMRFOps",
+      "AIWasteManagementRouteOptimizer",
+      "AIWaterUtilityManagement",
       "AIWindSolarFarmOps"
     ],
     "consolidatedFromApps": [
+      "energy-utilities-environment/climate-pattern-forecaster",
+      "energy-utilities-environment/energy-grid-optimizer",
       "energy-utilities-environment/recycling-mrf-ops"
     ],
     "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIWaterUtilityManagement",
+        "path": "backend/governance/router.js:113",
+        "route": "/:id/submit",
+        "originApp": "energy-utilities-environment/climate-pattern-forecaster"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIWasteManagementRouteOptimizer",
+        "path": "backend/governance/router.js:112",
+        "route": "/:id/submit",
+        "originApp": "energy-utilities-environment/energy-grid-optimizer"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIRecyclingMRFOps",
+        "path": "backend/governance/router.js:112",
+        "route": "/:id/submit",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      },
       {
         "kind": "api",
         "sourceProject": "AIWindSolarFarmOps",
@@ -11058,7 +11884,7 @@
       {
         "kind": "api",
         "sourceProject": "AIWindSolarFarmOps",
-        "path": "backend/routes/ai.js:572",
+        "path": "backend/routes/ai.js:568",
         "route": "/ticket-prioritizer",
         "originApp": "energy-utilities-environment/recycling-mrf-ops"
       },
@@ -11157,7 +11983,7 @@
   },
   {
     "name": "Training Records",
-    "canonicalKey": "training",
+    "canonicalKey": "record training",
     "aliases": [
       "Training Records Page"
     ],
@@ -11309,42 +12135,6 @@
     ]
   },
   {
-    "name": "Transition",
-    "canonicalKey": "transition",
-    "aliases": [],
-    "kinds": [
-      "api"
-    ],
-    "routes": [
-      "/:id/transition",
-      "/:wo_id/transition"
-    ],
-    "sourceProjects": [
-      "AIBatteryLifecycleManager",
-      "AIWindSolarFarmOps"
-    ],
-    "consolidatedFromApps": [
-      "energy-utilities-environment/climate-pattern-forecaster",
-      "energy-utilities-environment/recycling-mrf-ops"
-    ],
-    "evidence": [
-      {
-        "kind": "api",
-        "sourceProject": "AIBatteryLifecycleManager",
-        "path": "backend/routes/warrantyWorkflow.js:30",
-        "route": "/:id/transition",
-        "originApp": "energy-utilities-environment/climate-pattern-forecaster"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIWindSolarFarmOps",
-        "path": "backend/routes/workOrderStateMachine.js:45",
-        "route": "/:wo_id/transition",
-        "originApp": "energy-utilities-environment/recycling-mrf-ops"
-      }
-    ]
-  },
-  {
     "name": "Trigger",
     "canonicalKey": "trigger",
     "aliases": [],
@@ -11392,7 +12182,7 @@
       {
         "kind": "api",
         "sourceProject": "AIWindSolarFarmOps",
-        "path": "backend/routes/ai.js:513",
+        "path": "backend/routes/ai.js:509",
         "route": "/turbine-availability",
         "originApp": "energy-utilities-environment/recycling-mrf-ops"
       },
@@ -11566,7 +12356,7 @@
       {
         "kind": "api",
         "sourceProject": "AIBatteryLifecycleManager",
-        "path": "backend/routes/auth.js:76",
+        "path": "backend/routes/auth.js:52",
         "route": "/users",
         "originApp": "energy-utilities-environment/climate-pattern-forecaster"
       },
@@ -11587,21 +12377,21 @@
       {
         "kind": "api",
         "sourceProject": "AICoralReefRestorationTracker",
-        "path": "backend/routes/auth.js:77",
+        "path": "backend/routes/auth.js:7",
         "route": "/users",
         "originApp": "energy-utilities-environment/recycling-mrf-ops"
       },
       {
         "kind": "api",
         "sourceProject": "AIRecyclingMRFOps",
-        "path": "backend/routes/auth.js:78",
+        "path": "backend/routes/auth.js:60",
         "route": "/users",
         "originApp": "energy-utilities-environment/recycling-mrf-ops"
       },
       {
         "kind": "api",
         "sourceProject": "AIWindSolarFarmOps",
-        "path": "backend/routes/auth.js:76",
+        "path": "backend/routes/auth.js:57",
         "route": "/users",
         "originApp": "energy-utilities-environment/recycling-mrf-ops"
       }
@@ -11764,7 +12554,7 @@
       {
         "kind": "api",
         "sourceProject": "AIWindSolarFarmOps",
-        "path": "backend/routes/ai.js:527",
+        "path": "backend/routes/ai.js:523",
         "route": "/vendor-warranty-claim",
         "originApp": "energy-utilities-environment/recycling-mrf-ops"
       },
@@ -11867,6 +12657,13 @@
         "kind": "page",
         "sourceProject": "AIBiocharSoilCarbonSequestrationTracker",
         "path": "src/routes/carbonReports.js:149",
+        "route": "/:id/verify",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIBiocharSoilCarbonSequestrationTracker",
+        "path": "src/routes/mrvWorkflows.js:53",
         "route": "/:id/verify",
         "originApp": "energy-utilities-environment/recycling-mrf-ops"
       }
@@ -12199,7 +12996,7 @@
       {
         "kind": "api",
         "sourceProject": "AIWindSolarFarmOps",
-        "path": "backend/routes/ai.js:425",
+        "path": "backend/routes/ai.js:421",
         "route": "/weather-window",
         "originApp": "energy-utilities-environment/recycling-mrf-ops"
       },
@@ -12268,6 +13065,13 @@
         "originApp": "energy-utilities-environment/climate-pattern-forecaster"
       },
       {
+        "kind": "page",
+        "sourceProject": "AIBatteryLifecycleManager",
+        "path": "frontend/src/pages/WebhooksPage.js",
+        "route": "/WebhooksPage",
+        "originApp": "energy-utilities-environment/climate-pattern-forecaster"
+      },
+      {
         "kind": "navigation",
         "sourceProject": "AICoralReefRestorationTracker",
         "path": "frontend/src/components/Sidebar.js:103",
@@ -12294,13 +13098,6 @@
         "path": "frontend/src/App.js:144",
         "route": "/webhooks",
         "originApp": "energy-utilities-environment/recycling-mrf-ops"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIBatteryLifecycleManager",
-        "path": "frontend/src/pages/WebhooksPage.js",
-        "route": "/WebhooksPage",
-        "originApp": "energy-utilities-environment/climate-pattern-forecaster"
       },
       {
         "kind": "page",
@@ -12461,6 +13258,13 @@
         "originApp": "energy-utilities-environment/climate-pattern-forecaster"
       },
       {
+        "kind": "page",
+        "sourceProject": "AIWaterUtilityManagement",
+        "path": "frontend/src/pages/WorkOrdersPage.jsx",
+        "route": "/WorkOrdersPage",
+        "originApp": "energy-utilities-environment/climate-pattern-forecaster"
+      },
+      {
         "kind": "navigation",
         "sourceProject": "AIWindSolarFarmOps",
         "path": "frontend/src/components/Sidebar.js:15",
@@ -12480,13 +13284,6 @@
         "path": "frontend/src/pages/Dashboard.js:14",
         "route": "/work-orders",
         "originApp": "energy-utilities-environment/recycling-mrf-ops"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIWaterUtilityManagement",
-        "path": "frontend/src/pages/WorkOrdersPage.jsx",
-        "route": "/WorkOrdersPage",
-        "originApp": "energy-utilities-environment/climate-pattern-forecaster"
       },
       {
         "kind": "page",
