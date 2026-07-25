@@ -11,12 +11,12 @@
     "AIRecyclingMRFOps",
     "AIWindSolarFarmOps"
   ],
-  "featureCount": 307,
-  "candidateFeatureCount": 436,
-  "eliminatedSimilarFeatures": 129,
-  "evidenceCount": 965,
+  "featureCount": 365,
+  "candidateFeatureCount": 465,
+  "eliminatedSimilarFeatures": 100,
+  "evidenceCount": 1027,
   "aiPageCount": 59,
-  "sourceAIPageCount": 63,
+  "sourceAIPageCount": 61,
   "featureEvidencePolicy": "Existing source routes, pages, APIs, models, schemas, and navigation only",
   "optimizationPolicy": "Equivalent feature names are consolidated once per industry and assigned to one canonical app owner",
   "database": "database.sqlite",
@@ -25,6 +25,6 @@
     "seededTables": 61,
     "seededRows": 915
   },
-  "visibleFeatureCount": 144,
+  "visibleFeatureCount": 164,
   "featureVisibilityMode": "seeded-or-ai"
 }

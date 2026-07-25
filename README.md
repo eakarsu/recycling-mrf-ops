@@ -3,7 +3,7 @@
 Industry: **Energy, Utilities & Environment**  
 Specialization: **Recycling Mrf Ops**
 
-This standalone application consolidates source-backed capabilities into 307 optimized features, including 144 visible data-backed or AI-enabled views. Its public demo SQLite database contains 915 sanitized source rows across 61 imported tables and 120 operational workflow records.
+This standalone application consolidates source-backed capabilities into 365 optimized features, including 164 visible data-backed or AI-enabled views. Its public demo SQLite database contains 915 sanitized source rows across 61 imported tables and 120 operational workflow records.
 
 ## Run locally
 

@@ -36,13 +36,70 @@
     ]
   },
   {
+    "name": "AI Asset Degradation Trend",
+    "canonicalKey": "ai asset degradation trend",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/asset-deg-trend"
+    ],
+    "sourceProjects": [
+      "AIWindSolarFarmOps"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIWindSolarFarmOps",
+        "path": "frontend/src/pages/AIAssetDegTrendPage.js",
+        "route": "/ai/asset-deg-trend",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
     "name": "AI Bale Quality Grade",
     "canonicalKey": "ai bale grade quality",
-    "aliases": [
-      "AI Bale Quality Grade Page"
-    ],
+    "aliases": [],
     "kinds": [
-      "navigation",
+      "ai-page",
+      "navigation"
+    ],
+    "routes": [
+      "/ai/bale-quality-grade"
+    ],
+    "sourceProjects": [
+      "AIRecyclingMRFOps"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIRecyclingMRFOps",
+        "path": "frontend/src/pages/AIBaleQualityGradePage.js",
+        "route": "/ai/bale-quality-grade",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIRecyclingMRFOps",
+        "path": "frontend/src/components/Sidebar.js:49",
+        "route": "",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
+    "name": "AI Bale Quality Grade Page",
+    "canonicalKey": "ai bale grade quality",
+    "aliases": [],
+    "kinds": [
       "page"
     ],
     "routes": [
@@ -55,13 +112,6 @@
       "energy-utilities-environment/recycling-mrf-ops"
     ],
     "evidence": [
-      {
-        "kind": "navigation",
-        "sourceProject": "AIRecyclingMRFOps",
-        "path": "frontend/src/components/Sidebar.js:49",
-        "route": "",
-        "originApp": "energy-utilities-environment/recycling-mrf-ops"
-      },
       {
         "kind": "page",
         "sourceProject": "AIRecyclingMRFOps",
@@ -103,6 +153,58 @@
         "sourceProject": "AIWindSolarFarmOps",
         "path": "frontend/src/pages/AIBladeInspectionPage.js",
         "route": "/AIBladeInspectionPage",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
+    "name": "AI Blade Inspection Summary",
+    "canonicalKey": "ai blade inspection summary",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/blade-inspection-summary"
+    ],
+    "sourceProjects": [
+      "AIWindSolarFarmOps"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIWindSolarFarmOps",
+        "path": "frontend/src/pages/AIBladeInspectionPage.js",
+        "route": "/ai/blade-inspection-summary",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
+    "name": "AI Bleaching Event Forecast",
+    "canonicalKey": "ai bleaching event forecast",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/bleaching-event-forecast"
+    ],
+    "sourceProjects": [
+      "AICoralReefRestorationTracker"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AICoralReefRestorationTracker",
+        "path": "frontend/src/pages/AIBleachingForecastPage.js",
+        "route": "/ai/bleaching-event-forecast",
         "originApp": "energy-utilities-environment/recycling-mrf-ops"
       }
     ]
@@ -192,6 +294,32 @@
     ]
   },
   {
+    "name": "AI Capacity Utilization Brief",
+    "canonicalKey": "ai brief capacity utilization",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/capacity-utilization-brief"
+    ],
+    "sourceProjects": [
+      "AIRecyclingMRFOps"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIRecyclingMRFOps",
+        "path": "frontend/src/pages/AICapacityUtilizationBriefPage.js",
+        "route": "/ai/capacity-utilization-brief",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
     "name": "AI Capacity Utilization Brief Page",
     "canonicalKey": "ai brief capacity utilization",
     "aliases": [],
@@ -213,6 +341,32 @@
         "sourceProject": "AIRecyclingMRFOps",
         "path": "frontend/src/pages/AICapacityUtilizationBriefPage.js",
         "route": "/AICapacityUtilizationBriefPage",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
+    "name": "AI Commodity Price Forecast",
+    "canonicalKey": "ai commodity forecast price",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/commodity-price-forecast"
+    ],
+    "sourceProjects": [
+      "AIRecyclingMRFOps"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIRecyclingMRFOps",
+        "path": "frontend/src/pages/AICommodityPriceForecastPage.js",
+        "route": "/ai/commodity-price-forecast",
         "originApp": "energy-utilities-environment/recycling-mrf-ops"
       }
     ]
@@ -294,6 +448,32 @@
     ]
   },
   {
+    "name": "AI Contamination Vision Score",
+    "canonicalKey": "ai contamination score vision",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/contamination-vision-score"
+    ],
+    "sourceProjects": [
+      "AIRecyclingMRFOps"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIRecyclingMRFOps",
+        "path": "frontend/src/pages/AIContaminationVisionScorePage.js",
+        "route": "/ai/contamination-vision-score",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
     "name": "AI Contamination Vision Score Page",
     "canonicalKey": "ai contamination score vision",
     "aliases": [],
@@ -322,11 +502,42 @@
   {
     "name": "AI Curtailment Optimize",
     "canonicalKey": "ai curtailment optimize",
-    "aliases": [
-      "AI Curtailment Optimize Page"
-    ],
+    "aliases": [],
     "kinds": [
-      "navigation",
+      "ai-page",
+      "navigation"
+    ],
+    "routes": [
+      "/ai/curtailment-optimize"
+    ],
+    "sourceProjects": [
+      "AIWindSolarFarmOps"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIWindSolarFarmOps",
+        "path": "frontend/src/pages/AICurtailmentOptimizePage.js",
+        "route": "/ai/curtailment-optimize",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIWindSolarFarmOps",
+        "path": "frontend/src/components/Sidebar.js:47",
+        "route": "",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
+    "name": "AI Curtailment Optimize Page",
+    "canonicalKey": "ai curtailment optimize",
+    "aliases": [],
+    "kinds": [
       "page"
     ],
     "routes": [
@@ -339,13 +550,6 @@
       "energy-utilities-environment/recycling-mrf-ops"
     ],
     "evidence": [
-      {
-        "kind": "navigation",
-        "sourceProject": "AIWindSolarFarmOps",
-        "path": "frontend/src/components/Sidebar.js:47",
-        "route": "",
-        "originApp": "energy-utilities-environment/recycling-mrf-ops"
-      },
       {
         "kind": "page",
         "sourceProject": "AIWindSolarFarmOps",
@@ -375,6 +579,32 @@
         "sourceProject": "AIRecyclingMRFOps",
         "path": "frontend/src/components/Sidebar.js:55",
         "route": "",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
+    "name": "AI Customer Quality Feedback",
+    "canonicalKey": "ai customer feedback quality",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/customer-quality-feedback"
+    ],
+    "sourceProjects": [
+      "AIRecyclingMRFOps"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIRecyclingMRFOps",
+        "path": "frontend/src/pages/AICustomerQualityFeedbackPage.js",
+        "route": "/ai/customer-quality-feedback",
         "originApp": "energy-utilities-environment/recycling-mrf-ops"
       }
     ]
@@ -456,6 +686,32 @@
     ]
   },
   {
+    "name": "AI Diver Safety Brief",
+    "canonicalKey": "ai brief diver safety",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/diver-safety-brief"
+    ],
+    "sourceProjects": [
+      "AICoralReefRestorationTracker"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AICoralReefRestorationTracker",
+        "path": "frontend/src/pages/AIDiverSafetyBriefPage.js",
+        "route": "/ai/diver-safety-brief",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
     "name": "AI Diver Safety Brief Page",
     "canonicalKey": "ai brief diver safety",
     "aliases": [],
@@ -484,11 +740,42 @@
   {
     "name": "AI Donor Narrative",
     "canonicalKey": "ai donor narrative",
-    "aliases": [
-      "AI Donor Narrative Page"
-    ],
+    "aliases": [],
     "kinds": [
-      "navigation",
+      "ai-page",
+      "navigation"
+    ],
+    "routes": [
+      "/ai/donor-narrative"
+    ],
+    "sourceProjects": [
+      "AICoralReefRestorationTracker"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AICoralReefRestorationTracker",
+        "path": "frontend/src/pages/AIDonorNarrativePage.js",
+        "route": "/ai/donor-narrative",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AICoralReefRestorationTracker",
+        "path": "frontend/src/components/Sidebar.js:90",
+        "route": "",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
+    "name": "AI Donor Narrative Page",
+    "canonicalKey": "ai donor narrative",
+    "aliases": [],
+    "kinds": [
       "page"
     ],
     "routes": [
@@ -501,13 +788,6 @@
       "energy-utilities-environment/recycling-mrf-ops"
     ],
     "evidence": [
-      {
-        "kind": "navigation",
-        "sourceProject": "AICoralReefRestorationTracker",
-        "path": "frontend/src/components/Sidebar.js:90",
-        "route": "",
-        "originApp": "energy-utilities-environment/recycling-mrf-ops"
-      },
       {
         "kind": "page",
         "sourceProject": "AICoralReefRestorationTracker",
@@ -554,13 +834,70 @@
     ]
   },
   {
+    "name": "AI Downtime Root Cause Analysis",
+    "canonicalKey": "ai analysis cause downtime root",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/downtime-rca"
+    ],
+    "sourceProjects": [
+      "AIRecyclingMRFOps"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIRecyclingMRFOps",
+        "path": "frontend/src/pages/AIDowntimeRCAPage.js",
+        "route": "/ai/downtime-rca",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
     "name": "AI Draft Work Order",
     "canonicalKey": "ai draft order work",
-    "aliases": [
-      "AI Draft Work Order Page"
-    ],
+    "aliases": [],
     "kinds": [
-      "navigation",
+      "ai-page",
+      "navigation"
+    ],
+    "routes": [
+      "/ai/draft-work-order"
+    ],
+    "sourceProjects": [
+      "AIWindSolarFarmOps"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIWindSolarFarmOps",
+        "path": "frontend/src/pages/AIDraftWorkOrderPage.js",
+        "route": "/ai/draft-work-order",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIWindSolarFarmOps",
+        "path": "frontend/src/components/Sidebar.js:58",
+        "route": "",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
+    "name": "AI Draft Work Order Page",
+    "canonicalKey": "ai draft order work",
+    "aliases": [],
+    "kinds": [
       "page"
     ],
     "routes": [
@@ -573,13 +910,6 @@
       "energy-utilities-environment/recycling-mrf-ops"
     ],
     "evidence": [
-      {
-        "kind": "navigation",
-        "sourceProject": "AIWindSolarFarmOps",
-        "path": "frontend/src/components/Sidebar.js:58",
-        "route": "",
-        "originApp": "energy-utilities-environment/recycling-mrf-ops"
-      },
       {
         "kind": "page",
         "sourceProject": "AIWindSolarFarmOps",
@@ -611,6 +941,32 @@
         "sourceProject": "AIWindSolarFarmOps",
         "path": "frontend/src/pages/AIDroneBladeInspectionPage.js",
         "route": "/AIDroneBladeInspectionPage",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
+    "name": "AI Drone Blade Inspection Pipeline",
+    "canonicalKey": "ai blade drone inspection pipeline",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/drone-blade-inspection"
+    ],
+    "sourceProjects": [
+      "AIWindSolarFarmOps"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIWindSolarFarmOps",
+        "path": "frontend/src/pages/AIDroneBladeInspectionPage.js",
+        "route": "/ai/drone-blade-inspection",
         "originApp": "energy-utilities-environment/recycling-mrf-ops"
       }
     ]
@@ -676,13 +1032,70 @@
     ]
   },
   {
+    "name": "AI End Market Matchmaker",
+    "canonicalKey": "ai end market matchmaker",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/end-market-match"
+    ],
+    "sourceProjects": [
+      "AIRecyclingMRFOps"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIRecyclingMRFOps",
+        "path": "frontend/src/pages/AIEndMarketMatchPage.js",
+        "route": "/ai/end-market-match",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
     "name": "AI Equipment Prognostic",
     "canonicalKey": "ai equipment prognostic",
-    "aliases": [
-      "AI Equipment Prognostic Page"
-    ],
+    "aliases": [],
     "kinds": [
-      "navigation",
+      "ai-page",
+      "navigation"
+    ],
+    "routes": [
+      "/ai/equipment-prognostic"
+    ],
+    "sourceProjects": [
+      "AIRecyclingMRFOps"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIRecyclingMRFOps",
+        "path": "frontend/src/pages/AIEquipmentPrognosticPage.js",
+        "route": "/ai/equipment-prognostic",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIRecyclingMRFOps",
+        "path": "frontend/src/components/Sidebar.js:48",
+        "route": "",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
+    "name": "AI Equipment Prognostic Page",
+    "canonicalKey": "ai equipment prognostic",
+    "aliases": [],
+    "kinds": [
       "page"
     ],
     "routes": [
@@ -696,13 +1109,6 @@
     ],
     "evidence": [
       {
-        "kind": "navigation",
-        "sourceProject": "AIRecyclingMRFOps",
-        "path": "frontend/src/components/Sidebar.js:48",
-        "route": "",
-        "originApp": "energy-utilities-environment/recycling-mrf-ops"
-      },
-      {
         "kind": "page",
         "sourceProject": "AIRecyclingMRFOps",
         "path": "frontend/src/pages/AIEquipmentPrognosticPage.js",
@@ -714,11 +1120,72 @@
   {
     "name": "AI Executive Brief",
     "canonicalKey": "ai brief executive",
-    "aliases": [
-      "AI Executive Brief Page"
-    ],
+    "aliases": [],
     "kinds": [
-      "navigation",
+      "ai-page",
+      "navigation"
+    ],
+    "routes": [
+      "/ai/executive-brief"
+    ],
+    "sourceProjects": [
+      "AICoralReefRestorationTracker",
+      "AIRecyclingMRFOps",
+      "AIWindSolarFarmOps"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AICoralReefRestorationTracker",
+        "path": "frontend/src/pages/AIExecutiveBriefPage.js",
+        "route": "/ai/executive-brief",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AICoralReefRestorationTracker",
+        "path": "frontend/src/components/Sidebar.js:85",
+        "route": "",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      },
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIRecyclingMRFOps",
+        "path": "frontend/src/pages/AIExecutiveBriefPage.js",
+        "route": "/ai/executive-brief",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIRecyclingMRFOps",
+        "path": "frontend/src/components/Sidebar.js:61",
+        "route": "",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      },
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIWindSolarFarmOps",
+        "path": "frontend/src/pages/AIExecutiveBriefPage.js",
+        "route": "/ai/executive-brief",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIWindSolarFarmOps",
+        "path": "frontend/src/components/Sidebar.js:71",
+        "route": "",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
+    "name": "AI Executive Brief Page",
+    "canonicalKey": "ai brief executive",
+    "aliases": [],
+    "kinds": [
       "page"
     ],
     "routes": [
@@ -736,39 +1203,11 @@
     ],
     "evidence": [
       {
-        "kind": "navigation",
-        "sourceProject": "AIBatteryLifecycleManager",
-        "path": "frontend/src/components/Sidebar.js:76",
-        "route": "",
-        "originApp": "energy-utilities-environment/climate-pattern-forecaster"
-      },
-      {
         "kind": "page",
         "sourceProject": "AIBatteryLifecycleManager",
         "path": "frontend/src/pages/AIExecutiveBriefPage.js",
         "route": "/AIExecutiveBriefPage",
         "originApp": "energy-utilities-environment/climate-pattern-forecaster"
-      },
-      {
-        "kind": "navigation",
-        "sourceProject": "AICoralReefRestorationTracker",
-        "path": "frontend/src/components/Sidebar.js:85",
-        "route": "",
-        "originApp": "energy-utilities-environment/recycling-mrf-ops"
-      },
-      {
-        "kind": "navigation",
-        "sourceProject": "AIRecyclingMRFOps",
-        "path": "frontend/src/components/Sidebar.js:61",
-        "route": "",
-        "originApp": "energy-utilities-environment/recycling-mrf-ops"
-      },
-      {
-        "kind": "navigation",
-        "sourceProject": "AIWindSolarFarmOps",
-        "path": "frontend/src/components/Sidebar.js:71",
-        "route": "",
-        "originApp": "energy-utilities-environment/recycling-mrf-ops"
       },
       {
         "kind": "page",
@@ -796,11 +1235,42 @@
   {
     "name": "AI Fault Prognostic",
     "canonicalKey": "ai fault prognostic",
-    "aliases": [
-      "AI Fault Prognostic Page"
-    ],
+    "aliases": [],
     "kinds": [
-      "navigation",
+      "ai-page",
+      "navigation"
+    ],
+    "routes": [
+      "/ai/fault-prognostic"
+    ],
+    "sourceProjects": [
+      "AIWindSolarFarmOps"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIWindSolarFarmOps",
+        "path": "frontend/src/pages/AIFaultPrognosticPage.js",
+        "route": "/ai/fault-prognostic",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIWindSolarFarmOps",
+        "path": "frontend/src/components/Sidebar.js:53",
+        "route": "",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
+    "name": "AI Fault Prognostic Page",
+    "canonicalKey": "ai fault prognostic",
+    "aliases": [],
+    "kinds": [
       "page"
     ],
     "routes": [
@@ -814,13 +1284,6 @@
     ],
     "evidence": [
       {
-        "kind": "navigation",
-        "sourceProject": "AIWindSolarFarmOps",
-        "path": "frontend/src/components/Sidebar.js:53",
-        "route": "",
-        "originApp": "energy-utilities-environment/recycling-mrf-ops"
-      },
-      {
         "kind": "page",
         "sourceProject": "AIWindSolarFarmOps",
         "path": "frontend/src/pages/AIFaultPrognosticPage.js",
@@ -832,11 +1295,42 @@
   {
     "name": "AI Fleet Health",
     "canonicalKey": "ai fleet health",
-    "aliases": [
-      "AI Fleet Health Page"
-    ],
+    "aliases": [],
     "kinds": [
-      "navigation",
+      "ai-page",
+      "navigation"
+    ],
+    "routes": [
+      "/ai/fleet-health"
+    ],
+    "sourceProjects": [
+      "AIWindSolarFarmOps"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIWindSolarFarmOps",
+        "path": "frontend/src/pages/AIFleetHealthPage.js",
+        "route": "/ai/fleet-health",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIWindSolarFarmOps",
+        "path": "frontend/src/components/Sidebar.js:63",
+        "route": "",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
+    "name": "AI Fleet Health Page",
+    "canonicalKey": "ai fleet health",
+    "aliases": [],
+    "kinds": [
       "page"
     ],
     "routes": [
@@ -852,25 +1346,11 @@
     ],
     "evidence": [
       {
-        "kind": "navigation",
-        "sourceProject": "AIBatteryLifecycleManager",
-        "path": "frontend/src/components/Sidebar.js:77",
-        "route": "",
-        "originApp": "energy-utilities-environment/climate-pattern-forecaster"
-      },
-      {
         "kind": "page",
         "sourceProject": "AIBatteryLifecycleManager",
         "path": "frontend/src/pages/AIFleetHealthPage.js",
         "route": "/AIFleetHealthPage",
         "originApp": "energy-utilities-environment/climate-pattern-forecaster"
-      },
-      {
-        "kind": "navigation",
-        "sourceProject": "AIWindSolarFarmOps",
-        "path": "frontend/src/components/Sidebar.js:63",
-        "route": "",
-        "originApp": "energy-utilities-environment/recycling-mrf-ops"
       },
       {
         "kind": "page",
@@ -884,11 +1364,42 @@
   {
     "name": "AI Forecast Generation",
     "canonicalKey": "ai forecast generation",
-    "aliases": [
-      "AI Forecast Generation Page"
-    ],
+    "aliases": [],
     "kinds": [
-      "navigation",
+      "ai-page",
+      "navigation"
+    ],
+    "routes": [
+      "/ai/forecast-generation"
+    ],
+    "sourceProjects": [
+      "AIWindSolarFarmOps"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIWindSolarFarmOps",
+        "path": "frontend/src/pages/AIForecastGenerationPage.js",
+        "route": "/ai/forecast-generation",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIWindSolarFarmOps",
+        "path": "frontend/src/components/Sidebar.js:44",
+        "route": "",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
+    "name": "AI Forecast Generation Page",
+    "canonicalKey": "ai forecast generation",
+    "aliases": [],
+    "kinds": [
       "page"
     ],
     "routes": [
@@ -901,13 +1412,6 @@
       "energy-utilities-environment/recycling-mrf-ops"
     ],
     "evidence": [
-      {
-        "kind": "navigation",
-        "sourceProject": "AIWindSolarFarmOps",
-        "path": "frontend/src/components/Sidebar.js:44",
-        "route": "",
-        "originApp": "energy-utilities-environment/recycling-mrf-ops"
-      },
       {
         "kind": "page",
         "sourceProject": "AIWindSolarFarmOps",
@@ -978,13 +1482,70 @@
     ]
   },
   {
+    "name": "AI Fragment Health Vision",
+    "canonicalKey": "ai fragment health vision",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/fragment-health-vision"
+    ],
+    "sourceProjects": [
+      "AICoralReefRestorationTracker"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AICoralReefRestorationTracker",
+        "path": "frontend/src/pages/AIFragmentHealthPage.js",
+        "route": "/ai/fragment-health-vision",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
     "name": "AI Genotype Rescue Match",
     "canonicalKey": "ai genotype match rescue",
-    "aliases": [
-      "AI Genotype Rescue Match Page"
-    ],
+    "aliases": [],
     "kinds": [
-      "navigation",
+      "ai-page",
+      "navigation"
+    ],
+    "routes": [
+      "/ai/genotype-rescue-match"
+    ],
+    "sourceProjects": [
+      "AICoralReefRestorationTracker"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AICoralReefRestorationTracker",
+        "path": "frontend/src/pages/AIGenotypeRescueMatchPage.js",
+        "route": "/ai/genotype-rescue-match",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AICoralReefRestorationTracker",
+        "path": "frontend/src/components/Sidebar.js:79",
+        "route": "",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
+    "name": "AI Genotype Rescue Match Page",
+    "canonicalKey": "ai genotype match rescue",
+    "aliases": [],
+    "kinds": [
       "page"
     ],
     "routes": [
@@ -998,17 +1559,36 @@
     ],
     "evidence": [
       {
-        "kind": "navigation",
-        "sourceProject": "AICoralReefRestorationTracker",
-        "path": "frontend/src/components/Sidebar.js:79",
-        "route": "",
-        "originApp": "energy-utilities-environment/recycling-mrf-ops"
-      },
-      {
         "kind": "page",
         "sourceProject": "AICoralReefRestorationTracker",
         "path": "frontend/src/pages/AIGenotypeRescueMatchPage.js",
         "route": "/AIGenotypeRescueMatchPage",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
+    "name": "AI Grant Application Draft",
+    "canonicalKey": "ai draft grant",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/grant-application-draft"
+    ],
+    "sourceProjects": [
+      "AICoralReefRestorationTracker"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AICoralReefRestorationTracker",
+        "path": "frontend/src/pages/AIGrantDraftPage.js",
+        "route": "/ai/grant-application-draft",
         "originApp": "energy-utilities-environment/recycling-mrf-ops"
       }
     ]
@@ -1052,11 +1632,42 @@
   {
     "name": "AI Growth Rate Model",
     "canonicalKey": "ai growth model rate",
-    "aliases": [
-      "AI Growth Rate Model Page"
-    ],
+    "aliases": [],
     "kinds": [
-      "navigation",
+      "ai-page",
+      "navigation"
+    ],
+    "routes": [
+      "/ai/growth-rate-model"
+    ],
+    "sourceProjects": [
+      "AICoralReefRestorationTracker"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AICoralReefRestorationTracker",
+        "path": "frontend/src/pages/AIGrowthRateModelPage.js",
+        "route": "/ai/growth-rate-model",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AICoralReefRestorationTracker",
+        "path": "frontend/src/components/Sidebar.js:78",
+        "route": "",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
+    "name": "AI Growth Rate Model Page",
+    "canonicalKey": "ai growth model rate",
+    "aliases": [],
+    "kinds": [
       "page"
     ],
     "routes": [
@@ -1069,13 +1680,6 @@
       "energy-utilities-environment/recycling-mrf-ops"
     ],
     "evidence": [
-      {
-        "kind": "navigation",
-        "sourceProject": "AICoralReefRestorationTracker",
-        "path": "frontend/src/components/Sidebar.js:78",
-        "route": "",
-        "originApp": "energy-utilities-environment/recycling-mrf-ops"
-      },
       {
         "kind": "page",
         "sourceProject": "AICoralReefRestorationTracker",
@@ -1122,6 +1726,32 @@
     ]
   },
   {
+    "name": "AI Hauler Payment Reconciliation",
+    "canonicalKey": "ai hauler payment reconciliation",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/hauler-payment-recon"
+    ],
+    "sourceProjects": [
+      "AIRecyclingMRFOps"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIRecyclingMRFOps",
+        "path": "frontend/src/pages/AIHaulerPaymentReconPage.js",
+        "route": "/ai/hauler-payment-recon",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
     "name": "AI Hybrid Storage Co Opt",
     "canonicalKey": "ai co hybrid opt storage",
     "aliases": [],
@@ -1141,6 +1771,32 @@
         "sourceProject": "AIWindSolarFarmOps",
         "path": "frontend/src/components/Sidebar.js:49",
         "route": "",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
+    "name": "AI Hybrid Storage Co Optimizer",
+    "canonicalKey": "ai co hybrid optimizer storage",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/hybrid-storage-co-opt"
+    ],
+    "sourceProjects": [
+      "AIWindSolarFarmOps"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIWindSolarFarmOps",
+        "path": "frontend/src/pages/AIHybridStoragePage.js",
+        "route": "/ai/hybrid-storage-co-opt",
         "originApp": "energy-utilities-environment/recycling-mrf-ops"
       }
     ]
@@ -1174,11 +1830,42 @@
   {
     "name": "AI Intraday Forecast",
     "canonicalKey": "ai forecast intraday",
-    "aliases": [
-      "AI Intraday Forecast Page"
-    ],
+    "aliases": [],
     "kinds": [
-      "navigation",
+      "ai-page",
+      "navigation"
+    ],
+    "routes": [
+      "/ai/intraday-forecast"
+    ],
+    "sourceProjects": [
+      "AIWindSolarFarmOps"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIWindSolarFarmOps",
+        "path": "frontend/src/pages/AIIntradayForecastPage.js",
+        "route": "/ai/intraday-forecast",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIWindSolarFarmOps",
+        "path": "frontend/src/components/Sidebar.js:45",
+        "route": "",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
+    "name": "AI Intraday Forecast Page",
+    "canonicalKey": "ai forecast intraday",
+    "aliases": [],
+    "kinds": [
       "page"
     ],
     "routes": [
@@ -1191,13 +1878,6 @@
       "energy-utilities-environment/recycling-mrf-ops"
     ],
     "evidence": [
-      {
-        "kind": "navigation",
-        "sourceProject": "AIWindSolarFarmOps",
-        "path": "frontend/src/components/Sidebar.js:45",
-        "route": "",
-        "originApp": "energy-utilities-environment/recycling-mrf-ops"
-      },
       {
         "kind": "page",
         "sourceProject": "AIWindSolarFarmOps",
@@ -1244,6 +1924,32 @@
     ]
   },
   {
+    "name": "AI Inverter Clipping Detect",
+    "canonicalKey": "ai clipping detect inverter",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/inverter-clipping-detect"
+    ],
+    "sourceProjects": [
+      "AIWindSolarFarmOps"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIWindSolarFarmOps",
+        "path": "frontend/src/pages/AIInverterClippingPage.js",
+        "route": "/ai/inverter-clipping-detect",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
     "name": "AI Line Camera Anomaly Narrate Page",
     "canonicalKey": "ai anomaly camera line narrate",
     "aliases": [],
@@ -1270,6 +1976,32 @@
     ]
   },
   {
+    "name": "AI Line Camera Anomaly Narrator",
+    "canonicalKey": "ai anomaly camera line narrator",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/line-camera-anomaly-narrate"
+    ],
+    "sourceProjects": [
+      "AIRecyclingMRFOps"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIRecyclingMRFOps",
+        "path": "frontend/src/pages/AILineCameraAnomalyNarratePage.js",
+        "route": "/ai/line-camera-anomaly-narrate",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
     "name": "AI Muni Report Card",
     "canonicalKey": "ai card muni report",
     "aliases": [],
@@ -1289,6 +2021,32 @@
         "sourceProject": "AIRecyclingMRFOps",
         "path": "frontend/src/components/Sidebar.js:94",
         "route": "",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
+    "name": "AI O M Ticket Prioritizer",
+    "canonicalKey": "ai m o prioritizer ticket",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/ticket-prioritizer"
+    ],
+    "sourceProjects": [
+      "AIWindSolarFarmOps"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIWindSolarFarmOps",
+        "path": "frontend/src/pages/AITicketPrioritizerPage.js",
+        "route": "/ai/ticket-prioritizer",
         "originApp": "energy-utilities-environment/recycling-mrf-ops"
       }
     ]
@@ -1330,13 +2088,96 @@
     ]
   },
   {
+    "name": "AI Partner Impact Report",
+    "canonicalKey": "ai impact partner report",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/partner-impact-report"
+    ],
+    "sourceProjects": [
+      "AICoralReefRestorationTracker"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AICoralReefRestorationTracker",
+        "path": "frontend/src/pages/AIPartnerImpactPage.js",
+        "route": "/ai/partner-impact-report",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
+    "name": "AI Per Municipality Contamination Report Card",
+    "canonicalKey": "ai card contamination municipality per report",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/contamination-report-card"
+    ],
+    "sourceProjects": [
+      "AIRecyclingMRFOps"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIRecyclingMRFOps",
+        "path": "frontend/src/pages/AIContaminationReportCardPage.js",
+        "route": "/ai/contamination-report-card",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
     "name": "AI Ppa Settlement",
     "canonicalKey": "ai ppa settlement",
-    "aliases": [
-      "AI Ppa Settlement Page"
-    ],
+    "aliases": [],
     "kinds": [
-      "navigation",
+      "ai-page",
+      "navigation"
+    ],
+    "routes": [
+      "/ai/ppa-settlement"
+    ],
+    "sourceProjects": [
+      "AIWindSolarFarmOps"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIWindSolarFarmOps",
+        "path": "frontend/src/pages/AIPpaSettlementPage.js",
+        "route": "/ai/ppa-settlement",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIWindSolarFarmOps",
+        "path": "frontend/src/components/Sidebar.js:68",
+        "route": "",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
+    "name": "AI Ppa Settlement Page",
+    "canonicalKey": "ai ppa settlement",
+    "aliases": [],
+    "kinds": [
       "page"
     ],
     "routes": [
@@ -1349,13 +2190,6 @@
       "energy-utilities-environment/recycling-mrf-ops"
     ],
     "evidence": [
-      {
-        "kind": "navigation",
-        "sourceProject": "AIWindSolarFarmOps",
-        "path": "frontend/src/components/Sidebar.js:68",
-        "route": "",
-        "originApp": "energy-utilities-environment/recycling-mrf-ops"
-      },
       {
         "kind": "page",
         "sourceProject": "AIWindSolarFarmOps",
@@ -1397,6 +2231,32 @@
         "sourceProject": "AIWindSolarFarmOps",
         "path": "frontend/src/pages/AIPpaShortfallPage.js",
         "route": "/AIPpaShortfallPage",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
+    "name": "AI Ppa Shortfall Narrator",
+    "canonicalKey": "ai narrator ppa shortfall",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/ppa-shortfall-narrator"
+    ],
+    "sourceProjects": [
+      "AIWindSolarFarmOps"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIWindSolarFarmOps",
+        "path": "frontend/src/pages/AIPpaShortfallPage.js",
+        "route": "/ai/ppa-shortfall-narrator",
         "originApp": "energy-utilities-environment/recycling-mrf-ops"
       }
     ]
@@ -1462,13 +2322,70 @@
     ]
   },
   {
+    "name": "AI Propagation Success Rate",
+    "canonicalKey": "ai propagation rate success",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/propagation-success-rate"
+    ],
+    "sourceProjects": [
+      "AICoralReefRestorationTracker"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AICoralReefRestorationTracker",
+        "path": "frontend/src/pages/AIPropagationSuccessPage.js",
+        "route": "/ai/propagation-success-rate",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
     "name": "AI Publication Summary",
     "canonicalKey": "ai publication summary",
-    "aliases": [
-      "AI Publication Summary Page"
-    ],
+    "aliases": [],
     "kinds": [
-      "navigation",
+      "ai-page",
+      "navigation"
+    ],
+    "routes": [
+      "/ai/publication-summary"
+    ],
+    "sourceProjects": [
+      "AICoralReefRestorationTracker"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AICoralReefRestorationTracker",
+        "path": "frontend/src/pages/AIPublicationSummaryPage.js",
+        "route": "/ai/publication-summary",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AICoralReefRestorationTracker",
+        "path": "frontend/src/components/Sidebar.js:88",
+        "route": "",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
+    "name": "AI Publication Summary Page",
+    "canonicalKey": "ai publication summary",
+    "aliases": [],
+    "kinds": [
       "page"
     ],
     "routes": [
@@ -1482,13 +2399,6 @@
     ],
     "evidence": [
       {
-        "kind": "navigation",
-        "sourceProject": "AICoralReefRestorationTracker",
-        "path": "frontend/src/components/Sidebar.js:88",
-        "route": "",
-        "originApp": "energy-utilities-environment/recycling-mrf-ops"
-      },
-      {
         "kind": "page",
         "sourceProject": "AICoralReefRestorationTracker",
         "path": "frontend/src/pages/AIPublicationSummaryPage.js",
@@ -1500,11 +2410,42 @@
   {
     "name": "AI Ramp Rate Strategy",
     "canonicalKey": "ai ramp rate strategy",
-    "aliases": [
-      "AI Ramp Rate Strategy Page"
-    ],
+    "aliases": [],
     "kinds": [
-      "navigation",
+      "ai-page",
+      "navigation"
+    ],
+    "routes": [
+      "/ai/ramp-rate-strategy"
+    ],
+    "sourceProjects": [
+      "AIWindSolarFarmOps"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIWindSolarFarmOps",
+        "path": "frontend/src/pages/AIRampRateStrategyPage.js",
+        "route": "/ai/ramp-rate-strategy",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIWindSolarFarmOps",
+        "path": "frontend/src/components/Sidebar.js:48",
+        "route": "",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
+    "name": "AI Ramp Rate Strategy Page",
+    "canonicalKey": "ai ramp rate strategy",
+    "aliases": [],
+    "kinds": [
       "page"
     ],
     "routes": [
@@ -1517,13 +2458,6 @@
       "energy-utilities-environment/recycling-mrf-ops"
     ],
     "evidence": [
-      {
-        "kind": "navigation",
-        "sourceProject": "AIWindSolarFarmOps",
-        "path": "frontend/src/components/Sidebar.js:48",
-        "route": "",
-        "originApp": "energy-utilities-environment/recycling-mrf-ops"
-      },
       {
         "kind": "page",
         "sourceProject": "AIWindSolarFarmOps",
@@ -1562,11 +2496,42 @@
   {
     "name": "AI Regulatory Reporting",
     "canonicalKey": "ai regulatory reporting",
-    "aliases": [
-      "AI Regulatory Reporting Page"
-    ],
+    "aliases": [],
     "kinds": [
-      "navigation",
+      "ai-page",
+      "navigation"
+    ],
+    "routes": [
+      "/ai/regulatory-reporting"
+    ],
+    "sourceProjects": [
+      "AIRecyclingMRFOps"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIRecyclingMRFOps",
+        "path": "frontend/src/pages/AIRegulatoryReportingPage.js",
+        "route": "/ai/regulatory-reporting",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIRecyclingMRFOps",
+        "path": "frontend/src/components/Sidebar.js:66",
+        "route": "",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
+    "name": "AI Regulatory Reporting Page",
+    "canonicalKey": "ai regulatory reporting",
+    "aliases": [],
+    "kinds": [
       "page"
     ],
     "routes": [
@@ -1579,13 +2544,6 @@
       "energy-utilities-environment/recycling-mrf-ops"
     ],
     "evidence": [
-      {
-        "kind": "navigation",
-        "sourceProject": "AIRecyclingMRFOps",
-        "path": "frontend/src/components/Sidebar.js:66",
-        "route": "",
-        "originApp": "energy-utilities-environment/recycling-mrf-ops"
-      },
       {
         "kind": "page",
         "sourceProject": "AIRecyclingMRFOps",
@@ -1622,11 +2580,42 @@
   {
     "name": "AI Restoration Prioritize",
     "canonicalKey": "ai prioritize restoration",
-    "aliases": [
-      "AI Restoration Prioritize Page"
-    ],
+    "aliases": [],
     "kinds": [
-      "navigation",
+      "ai-page",
+      "navigation"
+    ],
+    "routes": [
+      "/ai/restoration-prioritize"
+    ],
+    "sourceProjects": [
+      "AICoralReefRestorationTracker"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AICoralReefRestorationTracker",
+        "path": "frontend/src/pages/AIRestorationPrioritizePage.js",
+        "route": "/ai/restoration-prioritize",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AICoralReefRestorationTracker",
+        "path": "frontend/src/components/Sidebar.js:71",
+        "route": "",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
+    "name": "AI Restoration Prioritize Page",
+    "canonicalKey": "ai prioritize restoration",
+    "aliases": [],
+    "kinds": [
       "page"
     ],
     "routes": [
@@ -1639,13 +2628,6 @@
       "energy-utilities-environment/recycling-mrf-ops"
     ],
     "evidence": [
-      {
-        "kind": "navigation",
-        "sourceProject": "AICoralReefRestorationTracker",
-        "path": "frontend/src/components/Sidebar.js:71",
-        "route": "",
-        "originApp": "energy-utilities-environment/recycling-mrf-ops"
-      },
       {
         "kind": "page",
         "sourceProject": "AICoralReefRestorationTracker",
@@ -1660,9 +2642,12 @@
     "canonicalKey": "ai analyzer cause root",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "navigation"
     ],
-    "routes": [],
+    "routes": [
+      "/ai/root-cause-analyzer"
+    ],
     "sourceProjects": [
       "AIWindSolarFarmOps"
     ],
@@ -1670,6 +2655,13 @@
       "energy-utilities-environment/recycling-mrf-ops"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIWindSolarFarmOps",
+        "path": "frontend/src/pages/AIRootCausePage.js",
+        "route": "/ai/root-cause-analyzer",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      },
       {
         "kind": "navigation",
         "sourceProject": "AIWindSolarFarmOps",
@@ -1730,6 +2722,32 @@
     ]
   },
   {
+    "name": "AI Route Pickup Optimize",
+    "canonicalKey": "ai optimize pickup route",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/route-pickup-optimize"
+    ],
+    "sourceProjects": [
+      "AIRecyclingMRFOps"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIRecyclingMRFOps",
+        "path": "frontend/src/pages/AIRoutePickupOptimizePage.js",
+        "route": "/ai/route-pickup-optimize",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
     "name": "AI Route Pickup Optimize Page",
     "canonicalKey": "ai optimize pickup route",
     "aliases": [],
@@ -1751,6 +2769,32 @@
         "sourceProject": "AIRecyclingMRFOps",
         "path": "frontend/src/pages/AIRoutePickupOptimizePage.js",
         "route": "/AIRoutePickupOptimizePage",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
+    "name": "AI Safety Incident Summary",
+    "canonicalKey": "ai incident safety summary",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/safety-incident-summary"
+    ],
+    "sourceProjects": [
+      "AIRecyclingMRFOps"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIRecyclingMRFOps",
+        "path": "frontend/src/pages/AISafetyIncidentSummaryPage.js",
+        "route": "/ai/safety-incident-summary",
         "originApp": "energy-utilities-environment/recycling-mrf-ops"
       }
     ]
@@ -1808,11 +2852,42 @@
   {
     "name": "AI Schedule Maintenance",
     "canonicalKey": "ai maintenance schedule",
-    "aliases": [
-      "AI Schedule Maintenance Page"
-    ],
+    "aliases": [],
     "kinds": [
-      "navigation",
+      "ai-page",
+      "navigation"
+    ],
+    "routes": [
+      "/ai/schedule-maintenance"
+    ],
+    "sourceProjects": [
+      "AIWindSolarFarmOps"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIWindSolarFarmOps",
+        "path": "frontend/src/pages/AIScheduleMaintenancePage.js",
+        "route": "/ai/schedule-maintenance",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIWindSolarFarmOps",
+        "path": "frontend/src/components/Sidebar.js:54",
+        "route": "",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
+    "name": "AI Schedule Maintenance Page",
+    "canonicalKey": "ai maintenance schedule",
+    "aliases": [],
+    "kinds": [
       "page"
     ],
     "routes": [
@@ -1826,13 +2901,6 @@
     ],
     "evidence": [
       {
-        "kind": "navigation",
-        "sourceProject": "AIWindSolarFarmOps",
-        "path": "frontend/src/components/Sidebar.js:54",
-        "route": "",
-        "originApp": "energy-utilities-environment/recycling-mrf-ops"
-      },
-      {
         "kind": "page",
         "sourceProject": "AIWindSolarFarmOps",
         "path": "frontend/src/pages/AIScheduleMaintenancePage.js",
@@ -1844,11 +2912,42 @@
   {
     "name": "AI Scrap Market Brief",
     "canonicalKey": "ai brief market scrap",
-    "aliases": [
-      "AI Scrap Market Brief Page"
-    ],
+    "aliases": [],
     "kinds": [
-      "navigation",
+      "ai-page",
+      "navigation"
+    ],
+    "routes": [
+      "/ai/scrap-market-brief"
+    ],
+    "sourceProjects": [
+      "AIRecyclingMRFOps"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIRecyclingMRFOps",
+        "path": "frontend/src/pages/AIScrapMarketBriefPage.js",
+        "route": "/ai/scrap-market-brief",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIRecyclingMRFOps",
+        "path": "frontend/src/components/Sidebar.js:54",
+        "route": "",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
+    "name": "AI Scrap Market Brief Page",
+    "canonicalKey": "ai brief market scrap",
+    "aliases": [],
+    "kinds": [
       "page"
     ],
     "routes": [
@@ -1861,13 +2960,6 @@
       "energy-utilities-environment/recycling-mrf-ops"
     ],
     "evidence": [
-      {
-        "kind": "navigation",
-        "sourceProject": "AIRecyclingMRFOps",
-        "path": "frontend/src/components/Sidebar.js:54",
-        "route": "",
-        "originApp": "energy-utilities-environment/recycling-mrf-ops"
-      },
       {
         "kind": "page",
         "sourceProject": "AIRecyclingMRFOps",
@@ -1914,6 +3006,32 @@
     ]
   },
   {
+    "name": "AI Soiling Icing Detector",
+    "canonicalKey": "ai detector icing soiling",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/soiling-icing-detect"
+    ],
+    "sourceProjects": [
+      "AIWindSolarFarmOps"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIWindSolarFarmOps",
+        "path": "frontend/src/pages/AISoilingIcingPage.js",
+        "route": "/ai/soiling-icing-detect",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
     "name": "AI Sortation Balance",
     "canonicalKey": "ai balance sortation",
     "aliases": [],
@@ -1933,6 +3051,32 @@
         "sourceProject": "AIRecyclingMRFOps",
         "path": "frontend/src/components/Sidebar.js:46",
         "route": "",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
+    "name": "AI Sortation Line Balance",
+    "canonicalKey": "ai balance line sortation",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/sortation-line-balance"
+    ],
+    "sourceProjects": [
+      "AIRecyclingMRFOps"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIRecyclingMRFOps",
+        "path": "frontend/src/pages/AISortationLineBalancePage.js",
+        "route": "/ai/sortation-line-balance",
         "originApp": "energy-utilities-environment/recycling-mrf-ops"
       }
     ]
@@ -1988,6 +3132,32 @@
     ]
   },
   {
+    "name": "AI Species Id Fish",
+    "canonicalKey": "ai fish id specy",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/species-id-fish"
+    ],
+    "sourceProjects": [
+      "AICoralReefRestorationTracker"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AICoralReefRestorationTracker",
+        "path": "frontend/src/pages/AISpeciesIdFishPage.js",
+        "route": "/ai/species-id-fish",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
     "name": "AI Species Id Fish Page",
     "canonicalKey": "ai fish id specy",
     "aliases": [],
@@ -2016,11 +3186,42 @@
   {
     "name": "AI Species Mix Recommend",
     "canonicalKey": "ai mix recommend specy",
-    "aliases": [
-      "AI Species Mix Recommend Page"
-    ],
+    "aliases": [],
     "kinds": [
-      "navigation",
+      "ai-page",
+      "navigation"
+    ],
+    "routes": [
+      "/ai/species-mix-recommend"
+    ],
+    "sourceProjects": [
+      "AICoralReefRestorationTracker"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AICoralReefRestorationTracker",
+        "path": "frontend/src/pages/AISpeciesMixRecommendPage.js",
+        "route": "/ai/species-mix-recommend",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AICoralReefRestorationTracker",
+        "path": "frontend/src/components/Sidebar.js:77",
+        "route": "",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
+    "name": "AI Species Mix Recommend Page",
+    "canonicalKey": "ai mix recommend specy",
+    "aliases": [],
+    "kinds": [
       "page"
     ],
     "routes": [
@@ -2034,13 +3235,6 @@
     ],
     "evidence": [
       {
-        "kind": "navigation",
-        "sourceProject": "AICoralReefRestorationTracker",
-        "path": "frontend/src/components/Sidebar.js:77",
-        "route": "",
-        "originApp": "energy-utilities-environment/recycling-mrf-ops"
-      },
-      {
         "kind": "page",
         "sourceProject": "AICoralReefRestorationTracker",
         "path": "frontend/src/pages/AISpeciesMixRecommendPage.js",
@@ -2052,11 +3246,42 @@
   {
     "name": "AI Survival Predict",
     "canonicalKey": "ai predict survival",
-    "aliases": [
-      "AI Survival Predict Page"
-    ],
+    "aliases": [],
     "kinds": [
-      "navigation",
+      "ai-page",
+      "navigation"
+    ],
+    "routes": [
+      "/ai/survival-predict"
+    ],
+    "sourceProjects": [
+      "AICoralReefRestorationTracker"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AICoralReefRestorationTracker",
+        "path": "frontend/src/pages/AISurvivalPredictPage.js",
+        "route": "/ai/survival-predict",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AICoralReefRestorationTracker",
+        "path": "frontend/src/components/Sidebar.js:68",
+        "route": "",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
+    "name": "AI Survival Predict Page",
+    "canonicalKey": "ai predict survival",
+    "aliases": [],
+    "kinds": [
       "page"
     ],
     "routes": [
@@ -2070,13 +3295,6 @@
     ],
     "evidence": [
       {
-        "kind": "navigation",
-        "sourceProject": "AICoralReefRestorationTracker",
-        "path": "frontend/src/components/Sidebar.js:68",
-        "route": "",
-        "originApp": "energy-utilities-environment/recycling-mrf-ops"
-      },
-      {
         "kind": "page",
         "sourceProject": "AICoralReefRestorationTracker",
         "path": "frontend/src/pages/AISurvivalPredictPage.js",
@@ -2088,11 +3306,42 @@
   {
     "name": "AI Throughput Forecast",
     "canonicalKey": "ai forecast throughput",
-    "aliases": [
-      "AI Throughput Forecast Page"
-    ],
+    "aliases": [],
     "kinds": [
-      "navigation",
+      "ai-page",
+      "navigation"
+    ],
+    "routes": [
+      "/ai/throughput-forecast"
+    ],
+    "sourceProjects": [
+      "AIRecyclingMRFOps"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIRecyclingMRFOps",
+        "path": "frontend/src/pages/AIThroughputForecastPage.js",
+        "route": "/ai/throughput-forecast",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIRecyclingMRFOps",
+        "path": "frontend/src/components/Sidebar.js:92",
+        "route": "",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
+    "name": "AI Throughput Forecast Page",
+    "canonicalKey": "ai forecast throughput",
+    "aliases": [],
+    "kinds": [
       "page"
     ],
     "routes": [
@@ -2105,13 +3354,6 @@
       "energy-utilities-environment/recycling-mrf-ops"
     ],
     "evidence": [
-      {
-        "kind": "navigation",
-        "sourceProject": "AIRecyclingMRFOps",
-        "path": "frontend/src/components/Sidebar.js:92",
-        "route": "",
-        "originApp": "energy-utilities-environment/recycling-mrf-ops"
-      },
       {
         "kind": "page",
         "sourceProject": "AIRecyclingMRFOps",
@@ -2194,13 +3436,70 @@
     ]
   },
   {
+    "name": "AI Training Gap Analysis",
+    "canonicalKey": "ai analysis gap training",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/training-gap-analysis"
+    ],
+    "sourceProjects": [
+      "AICoralReefRestorationTracker"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AICoralReefRestorationTracker",
+        "path": "frontend/src/pages/AITrainingGapPage.js",
+        "route": "/ai/training-gap-analysis",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
     "name": "AI Training Needs",
     "canonicalKey": "ai need training",
-    "aliases": [
-      "AI Training Needs Page"
-    ],
+    "aliases": [],
     "kinds": [
-      "navigation",
+      "ai-page",
+      "navigation"
+    ],
+    "routes": [
+      "/ai/training-needs"
+    ],
+    "sourceProjects": [
+      "AIRecyclingMRFOps"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIRecyclingMRFOps",
+        "path": "frontend/src/pages/AITrainingNeedsPage.js",
+        "route": "/ai/training-needs",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIRecyclingMRFOps",
+        "path": "frontend/src/components/Sidebar.js:64",
+        "route": "",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
+    "name": "AI Training Needs Page",
+    "canonicalKey": "ai need training",
+    "aliases": [],
+    "kinds": [
       "page"
     ],
     "routes": [
@@ -2214,13 +3513,6 @@
     ],
     "evidence": [
       {
-        "kind": "navigation",
-        "sourceProject": "AIRecyclingMRFOps",
-        "path": "frontend/src/components/Sidebar.js:64",
-        "route": "",
-        "originApp": "energy-utilities-environment/recycling-mrf-ops"
-      },
-      {
         "kind": "page",
         "sourceProject": "AIRecyclingMRFOps",
         "path": "frontend/src/pages/AITrainingNeedsPage.js",
@@ -2232,11 +3524,42 @@
   {
     "name": "AI Turbine Availability",
     "canonicalKey": "ai availability turbine",
-    "aliases": [
-      "AI Turbine Availability Page"
-    ],
+    "aliases": [],
     "kinds": [
-      "navigation",
+      "ai-page",
+      "navigation"
+    ],
+    "routes": [
+      "/ai/turbine-availability"
+    ],
+    "sourceProjects": [
+      "AIWindSolarFarmOps"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIWindSolarFarmOps",
+        "path": "frontend/src/pages/AITurbineAvailabilityPage.js",
+        "route": "/ai/turbine-availability",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIWindSolarFarmOps",
+        "path": "frontend/src/components/Sidebar.js:64",
+        "route": "",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
+    "name": "AI Turbine Availability Page",
+    "canonicalKey": "ai availability turbine",
+    "aliases": [],
+    "kinds": [
       "page"
     ],
     "routes": [
@@ -2250,13 +3573,6 @@
     ],
     "evidence": [
       {
-        "kind": "navigation",
-        "sourceProject": "AIWindSolarFarmOps",
-        "path": "frontend/src/components/Sidebar.js:64",
-        "route": "",
-        "originApp": "energy-utilities-environment/recycling-mrf-ops"
-      },
-      {
         "kind": "page",
         "sourceProject": "AIWindSolarFarmOps",
         "path": "frontend/src/pages/AITurbineAvailabilityPage.js",
@@ -2268,11 +3584,42 @@
   {
     "name": "AI Vendor Quote Compare",
     "canonicalKey": "ai compare quote vendor",
-    "aliases": [
-      "AI Vendor Quote Compare Page"
-    ],
+    "aliases": [],
     "kinds": [
-      "navigation",
+      "ai-page",
+      "navigation"
+    ],
+    "routes": [
+      "/ai/vendor-quote-compare"
+    ],
+    "sourceProjects": [
+      "AIRecyclingMRFOps"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIRecyclingMRFOps",
+        "path": "frontend/src/pages/AIVendorQuoteComparePage.js",
+        "route": "/ai/vendor-quote-compare",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIRecyclingMRFOps",
+        "path": "frontend/src/components/Sidebar.js:56",
+        "route": "",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
+    "name": "AI Vendor Quote Compare Page",
+    "canonicalKey": "ai compare quote vendor",
+    "aliases": [],
+    "kinds": [
       "page"
     ],
     "routes": [
@@ -2285,13 +3632,6 @@
       "energy-utilities-environment/recycling-mrf-ops"
     ],
     "evidence": [
-      {
-        "kind": "navigation",
-        "sourceProject": "AIRecyclingMRFOps",
-        "path": "frontend/src/components/Sidebar.js:56",
-        "route": "",
-        "originApp": "energy-utilities-environment/recycling-mrf-ops"
-      },
       {
         "kind": "page",
         "sourceProject": "AIRecyclingMRFOps",
@@ -2306,9 +3646,12 @@
     "canonicalKey": "ai claim vendor warranty",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "navigation"
     ],
-    "routes": [],
+    "routes": [
+      "/ai/vendor-warranty-claim"
+    ],
     "sourceProjects": [
       "AIWindSolarFarmOps"
     ],
@@ -2316,6 +3659,13 @@
       "energy-utilities-environment/recycling-mrf-ops"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIWindSolarFarmOps",
+        "path": "frontend/src/pages/AIVendorWarrantyPage.js",
+        "route": "/ai/vendor-warranty-claim",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      },
       {
         "kind": "navigation",
         "sourceProject": "AIWindSolarFarmOps",
@@ -2354,11 +3704,42 @@
   {
     "name": "AI Vessel Routing",
     "canonicalKey": "ai routing vessel",
-    "aliases": [
-      "AI Vessel Routing Page"
-    ],
+    "aliases": [],
     "kinds": [
-      "navigation",
+      "ai-page",
+      "navigation"
+    ],
+    "routes": [
+      "/ai/vessel-routing"
+    ],
+    "sourceProjects": [
+      "AICoralReefRestorationTracker"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AICoralReefRestorationTracker",
+        "path": "frontend/src/pages/AIVesselRoutingPage.js",
+        "route": "/ai/vessel-routing",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AICoralReefRestorationTracker",
+        "path": "frontend/src/components/Sidebar.js:72",
+        "route": "",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
+    "name": "AI Vessel Routing Page",
+    "canonicalKey": "ai routing vessel",
+    "aliases": [],
+    "kinds": [
       "page"
     ],
     "routes": [
@@ -2371,13 +3752,6 @@
       "energy-utilities-environment/recycling-mrf-ops"
     ],
     "evidence": [
-      {
-        "kind": "navigation",
-        "sourceProject": "AICoralReefRestorationTracker",
-        "path": "frontend/src/components/Sidebar.js:72",
-        "route": "",
-        "originApp": "energy-utilities-environment/recycling-mrf-ops"
-      },
       {
         "kind": "page",
         "sourceProject": "AICoralReefRestorationTracker",
@@ -2412,6 +3786,32 @@
     ]
   },
   {
+    "name": "AI Water Quality Anomaly",
+    "canonicalKey": "ai anomaly quality water",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/water-quality-anomaly"
+    ],
+    "sourceProjects": [
+      "AICoralReefRestorationTracker"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AICoralReefRestorationTracker",
+        "path": "frontend/src/pages/AIWaterQualityAnomalyPage.js",
+        "route": "/ai/water-quality-anomaly",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
     "name": "AI Water Quality Anomaly Page",
     "canonicalKey": "ai anomaly quality water",
     "aliases": [],
@@ -2440,11 +3840,42 @@
   {
     "name": "AI Weather Dive Window",
     "canonicalKey": "ai dive weather window",
-    "aliases": [
-      "AI Weather Dive Window Page"
-    ],
+    "aliases": [],
     "kinds": [
-      "navigation",
+      "ai-page",
+      "navigation"
+    ],
+    "routes": [
+      "/ai/weather-dive-window"
+    ],
+    "sourceProjects": [
+      "AICoralReefRestorationTracker"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AICoralReefRestorationTracker",
+        "path": "frontend/src/pages/AIWeatherDiveWindowPage.js",
+        "route": "/ai/weather-dive-window",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AICoralReefRestorationTracker",
+        "path": "frontend/src/components/Sidebar.js:70",
+        "route": "",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
+    "name": "AI Weather Dive Window Page",
+    "canonicalKey": "ai dive weather window",
+    "aliases": [],
+    "kinds": [
       "page"
     ],
     "routes": [
@@ -2458,13 +3889,6 @@
     ],
     "evidence": [
       {
-        "kind": "navigation",
-        "sourceProject": "AICoralReefRestorationTracker",
-        "path": "frontend/src/components/Sidebar.js:70",
-        "route": "",
-        "originApp": "energy-utilities-environment/recycling-mrf-ops"
-      },
-      {
         "kind": "page",
         "sourceProject": "AICoralReefRestorationTracker",
         "path": "frontend/src/pages/AIWeatherDiveWindowPage.js",
@@ -2476,11 +3900,42 @@
   {
     "name": "AI Weather Window",
     "canonicalKey": "ai weather window",
-    "aliases": [
-      "AI Weather Window Page"
-    ],
+    "aliases": [],
     "kinds": [
-      "navigation",
+      "ai-page",
+      "navigation"
+    ],
+    "routes": [
+      "/ai/weather-window"
+    ],
+    "sourceProjects": [
+      "AIWindSolarFarmOps"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIWindSolarFarmOps",
+        "path": "frontend/src/pages/AIWeatherWindowPage.js",
+        "route": "/ai/weather-window",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIWindSolarFarmOps",
+        "path": "frontend/src/components/Sidebar.js:46",
+        "route": "",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
+    "name": "AI Weather Window Page",
+    "canonicalKey": "ai weather window",
+    "aliases": [],
+    "kinds": [
       "page"
     ],
     "routes": [
@@ -2493,13 +3948,6 @@
       "energy-utilities-environment/recycling-mrf-ops"
     ],
     "evidence": [
-      {
-        "kind": "navigation",
-        "sourceProject": "AIWindSolarFarmOps",
-        "path": "frontend/src/components/Sidebar.js:46",
-        "route": "",
-        "originApp": "energy-utilities-environment/recycling-mrf-ops"
-      },
       {
         "kind": "page",
         "sourceProject": "AIWindSolarFarmOps",
@@ -7414,35 +8862,17 @@
       "page"
     ],
     "routes": [
-      "/ingest",
       "/ingests",
-      "/rag/ingest",
-      "/smart-meter/ingest"
+      "/rag/ingest"
     ],
     "sourceProjects": [
       "AIBiocharSoilCarbonSequestrationTracker",
-      "AICoralReefRestorationTracker",
-      "AIEnvironmentMonitor"
+      "AICoralReefRestorationTracker"
     ],
     "consolidatedFromApps": [
-      "energy-utilities-environment/climate-pattern-forecaster",
       "energy-utilities-environment/recycling-mrf-ops"
     ],
     "evidence": [
-      {
-        "kind": "api",
-        "sourceProject": "AIEnvironmentMonitor",
-        "path": "server/routes/aiBacklog.ts:126",
-        "route": "/smart-meter/ingest",
-        "originApp": "energy-utilities-environment/climate-pattern-forecaster"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIEnvironmentMonitor",
-        "path": "server/routes/realtimeCarbonTracker.ts:12",
-        "route": "/ingest",
-        "originApp": "energy-utilities-environment/climate-pattern-forecaster"
-      },
       {
         "kind": "page",
         "sourceProject": "AIBiocharSoilCarbonSequestrationTracker",
@@ -12758,6 +14188,66 @@
         "sourceProject": "AICoralReefRestorationTracker",
         "path": "frontend/src/pages/VesselsPage.js",
         "route": "/VesselsPage",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      }
+    ]
+  },
+  {
+    "name": "Water Quality",
+    "canonicalKey": "quality water",
+    "aliases": [
+      "Water Quality Page"
+    ],
+    "kinds": [
+      "navigation",
+      "page"
+    ],
+    "routes": [
+      "/WaterQualityPage",
+      "/water-quality"
+    ],
+    "sourceProjects": [
+      "AICoralReefRestorationTracker",
+      "AIWaterUtilityManagement"
+    ],
+    "consolidatedFromApps": [
+      "energy-utilities-environment/climate-pattern-forecaster",
+      "energy-utilities-environment/recycling-mrf-ops"
+    ],
+    "evidence": [
+      {
+        "kind": "page",
+        "sourceProject": "AIWaterUtilityManagement",
+        "path": "frontend/src/pages/WaterQualityPage.jsx",
+        "route": "/WaterQualityPage",
+        "originApp": "energy-utilities-environment/climate-pattern-forecaster"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AICoralReefRestorationTracker",
+        "path": "frontend/src/components/Sidebar.js:30",
+        "route": "",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AICoralReefRestorationTracker",
+        "path": "frontend/src/App.js:97",
+        "route": "/water-quality",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AICoralReefRestorationTracker",
+        "path": "frontend/src/pages/Dashboard.js:12",
+        "route": "/water-quality",
+        "originApp": "energy-utilities-environment/recycling-mrf-ops"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AICoralReefRestorationTracker",
+        "path": "frontend/src/pages/WaterQualityPage.js",
+        "route": "/WaterQualityPage",
         "originApp": "energy-utilities-environment/recycling-mrf-ops"
       }
     ]
